@@ -159,7 +159,7 @@ nav {
 
 .main-header div p {
   text-align: justify;
-  -ms-flow-into: none;
+  font-size: 18px;
 }
 
 .main-header img {
@@ -193,6 +193,7 @@ main .colecao .text-colecao {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 80px;
 }
 
 main .colecao .text-colecao h2 {
@@ -205,7 +206,6 @@ main .colecao .text-colecao h2 {
 main .colecao .text-colecao p {
   font-family: 'Lexend Exa';
   font-size: 18px;
-  font-weight: 300;
   text-align: center;
   width: 500px;
   margin-top: 30px;
@@ -220,7 +220,6 @@ main .colecao .text-colecao button {
   width: 150px;
   height: 40px;
   border: none;
-  margin-bottom: 80px;
 }
 
 main .colecao .text-colecao button:hover {
@@ -299,6 +298,7 @@ main .sophistication {
   grid-template-columns: 1.5fr 2fr;
   column-gap: 50px;
   justify-items: end;
+  margin-bottom: 100px;
 }
 
 main .sophistication div img {
@@ -308,12 +308,12 @@ main .sophistication div img {
 main .sophistication .text-sophistication {
   justify-self: start;
   width: 400px;
+  color: #310729;
 }
 
 main .sophistication .text-sophistication h2 {
   font-family: 'Ibarra Real Nova';
   font-size: 50px;
-  color: #310729;
   margin-bottom: 40px;
 }
 
@@ -321,7 +321,6 @@ main .sophistication .text-sophistication p {
   font-family: 'Lexend Exa';
   font-size: 18px;
   line-height: 2.0;
-  color: #310729;
   margin-bottom: 20px;
 }
 
@@ -330,8 +329,8 @@ main .sophistication .text-sophistication ul li a {
   font-family: 'Lexend Exa';
   margin-top: 20px;
   text-decoration: none;
-  color: #310729;
   font-size: 18px;
+  color: #310729;
 }
 
 main .sophistication .text-sophistication ul li a::before {
@@ -349,5 +348,84 @@ main .sophistication .text-sophistication ul li a:hover::before {
   width: 100%;
 }
 
+main .zerothree h2 {
+  background-color: #DFC4BC;
+  color: #DFC4BC;
+  font-size: 150px;
+  font-family: 'Ibarra Real Nova';
+  text-shadow:
+     1px  1px 0 #7c050f,
+    -1px  1px 0 #7c050f,
+    -1px -1px 0 #7c050f,
+     1px -1px 0 #7c050f;
+  letter-spacing: 16px;
+  text-align: center;
+}
+
+main .quality {
+  color: #310729;
+  background-color: #DFC4BC;
+  font-family: "Lexend Exa";
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  height: 600px;
+}
+
+main .quality .text-quality {
+  width: 500px;
+  text-align: center;
+  font-size: 18px;
+}
 
 
+main .quality .text-quality h2 {
+  font-family: "Ibarra Real Nova";
+  font-size: 50px;
+}
+
+main .quality .process {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+main .quality .process div {
+  height: 350px;
+  width: 300px;
+  background-color: #0f0510;
+  border-radius: 25px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 4px 4px 10px 0px #0000005a;
+}
+
+main .quality .process div p {
+  color: #DFC4BC;
+  margin: 5px 0px 25px 0px;
+}
+
+main .quality .process div button {
+  color: #fff;
+  background-color: #7c050f;
+  font-family: 'Lexend Exa';
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  border: none;
+  box-shadow: 4px 4px 10px 0px #00000080;
+}
+
+main .quality .process div button:hover {
+  cursor: pointer;
+  background-color: #0f0510;
+  border: 3px solid #7c050f;
+  transition: 0.5s;
+}
