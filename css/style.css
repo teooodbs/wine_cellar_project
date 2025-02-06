@@ -361,9 +361,6 @@ main .sophistication .text-sophistication ul li a:hover::before {
 }
 
 @media (max-width: 768px) {
-  main .colecao .text-colecao {
-    grid-template-columns: 1fr;
-  }
   main .sophistication {
     grid-template-columns: 1fr;
     text-align: center;
