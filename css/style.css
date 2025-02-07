@@ -132,7 +132,11 @@ nav {
 }
 
 .main-header {
-  background-image: linear-gradient(to right, #0f0510, #0f0510);
+  background-image: url('../images/bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 85vh;
   display: flex;
   justify-content: space-between;
@@ -188,7 +192,7 @@ main .zeroone h2 {
 }
 
 main .colecao .text-colecao {
-  color: #310729 ;
+  color: #310729;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -200,7 +204,7 @@ main .colecao .text-colecao h2 {
   font-size: 44px;
   font-family: 'Ibarra Real Nova';
   text-align: center;
-  color: #310729 ;
+  color: #310729;
 } 
 
 main .colecao .text-colecao p {
@@ -229,6 +233,38 @@ main .colecao .text-colecao button:hover {
   color: #56070C;
   transition: 0.5s;
 }
+
+@media (max-width: 768px) {
+  main .colecao .text-colecao p {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  main .colecao .text-colecao h2 {
+    font-size: 36px;
+  }
+
+  /* main .colecao .text-colecao button {
+    width: 120px;
+    height: 35px;
+  } */
+}
+
+@media (max-width: 480px) {
+  main .colecao .text-colecao p {
+    font-size: 14px;
+  }
+
+  main .colecao .text-colecao h2 {
+    font-size: 28px;
+  }
+
+  main .colecao .text-colecao button {
+    width: 100px;
+    height: 30px;
+  }
+}
+
 
 main .wines {
   display: grid;
@@ -366,6 +402,14 @@ main .sophistication .text-sophistication ul li a:hover::before {
     text-align: center;
   }
 
+  main .sophistication .text-sophistication h2 {
+    font-size: 36px;
+  }
+
+  main .sophistication .text-sophistication p {
+    font-size: 16px;
+  }
+
   main .sophistication .text-sophistication {
     text-align: center;
   }
@@ -373,6 +417,7 @@ main .sophistication .text-sophistication ul li a:hover::before {
   main .sophistication .text-sophistication ul {
     display: flex;
     justify-content: center;
+    font-size: 16px;
   }
 }
 
@@ -434,6 +479,14 @@ main .quality .process div {
   align-items: center;
   padding: 30px;
   box-shadow: 4px 4px 10px 0px #0000005a;
+}
+
+main .quality .process div img {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+main .quality .process div img:hover {
+  transform: scale(1.1);
 }
 
 main .quality .process div p {
