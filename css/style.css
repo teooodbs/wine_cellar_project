@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Lexend+Exa:wght@100..900&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
@@ -164,11 +163,11 @@ nav {
 
 .main-header img {
   margin-top: 40px;
-  width: max(230px, 20vw);
+  width: max(230px, 18vw);
 }
 
 span {
-  color: #7c050f;
+  color: #56070C;
 }
 
 main {
@@ -180,55 +179,87 @@ main .zeroone h2 {
   font-size: 150px;
   font-family: 'Ibarra Real Nova';
   text-shadow:
-     1px  1px 0 #7c050f,
-    -1px  1px 0 #7c050f,
-    -1px -1px 0 #7c050f,
-     1px -1px 0 #7c050f;
+     1px  1px 0 #56070C,
+    -1px  1px 0 #56070C,
+    -1px -1px 0 #56070C,
+     1px -1px 0 #56070C;
   letter-spacing: 16px;
   text-align: center;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h2 {
+  font-family: 'Ibarra Real Nova', serif;
+  text-align: center;
+}
+
+
+main .colecao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
 main .colecao .text-colecao {
-  color: #310729 ;
+  color: #310729;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 80px;
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 90%;
+  padding: 20px;
 }
 
 main .colecao .text-colecao h2 {
-  font-size: 44px;
-  font-family: 'Ibarra Real Nova';
-  text-align: center;
-  color: #310729 ;
-} 
+  font-size: clamp(30px, 4vw, 44px);
+}
 
 main .colecao .text-colecao p {
-  font-family: 'Lexend Exa';
-  font-size: 18px;
-  text-align: center;
-  width: 500px;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  font-family: 'Lexend Exa', sans-serif;
+  font-size: clamp(16px, 2vw, 18px);
+  max-width: 600px;
+  margin: 20px 0;
 }
 
 main .colecao .text-colecao button {
-  color: #fff;
-  background-color: #7c050f;
-  font-family: 'Lexend Exa';
+  color: white;
+  background-color: #56070C;
+  font-family: 'Lexend Exa', sans-serif;
   text-align: center;
-  width: 150px;
-  height: 40px;
+  width: 160px;
+  height: 45px;
   border: none;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
 main .colecao .text-colecao button:hover {
   cursor: pointer;
-  background-color: #fff;
-  border: 3px solid #7c050f;
-  color: #7c050f;
-  transition: 0.5s;
+  background-color: white;
+  border: 2px solid #56070C;
+  color: #56070C;
+}
+
+
+@media (max-width: 768px) {
+  main .colecao .text-colecao {
+    width: 100%;
+    padding: 0 20px;
+  }
+  main .colecao .text-colecao p {
+    width: 100%;
+  }
 }
 
 main .wines {
@@ -278,7 +309,7 @@ main .center-line {
 main .center-line div {
   height: 100px;
   width: 1px;
-  background-color: #7c050f; 
+  background-color: #56070C; 
 }
 
 main .zerotwo h2 {
@@ -286,10 +317,10 @@ main .zerotwo h2 {
   font-size: 150px;
   font-family: 'Ibarra Real Nova';
   text-shadow:
-     1px  1px 0 #7c050f,
-    -1px  1px 0 #7c050f,
-    -1px -1px 0 #7c050f,
-     1px -1px 0 #7c050f;
+     1px  1px 0 #56070C,
+    -1px  1px 0 #56070C,
+    -1px -1px 0 #56070C,
+     1px -1px 0 #56070C;
   letter-spacing: 16px;
   text-align: center;
 }
@@ -303,6 +334,7 @@ main .sophistication {
   justify-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  padding: 0px 20px;
 }
 
 
@@ -375,23 +407,24 @@ main .sophistication .text-sophistication ul li a:hover::before {
     justify-content: center;
   }
 }
+
 main .zerothree h2 {
-  background-color: #DFC4BC;
-  color: #DFC4BC;
+  background-color: #E1D9D9;
+  color: #E1D9D9;
   font-size: 150px;
   font-family: 'Ibarra Real Nova';
   text-shadow:
-     1px  1px 0 #7c050f,
-    -1px  1px 0 #7c050f,
-    -1px -1px 0 #7c050f,
-     1px -1px 0 #7c050f;
+     1px  1px 0 #56070C,
+    -1px  1px 0 #56070C,
+    -1px -1px 0 #56070C,
+     1px -1px 0 #56070C;
   letter-spacing: 16px;
   text-align: center;
 }
 
 main .quality {
   color: #310729;
-  background-color: #DFC4BC;
+  background-color: #E1D9D9;
   font-family: "Lexend Exa";
   padding: 0px 50px;
   display: flex;
@@ -417,6 +450,8 @@ main .quality .process {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 40px;
+  justify-content: center;
+  padding-bottom: 40px;
 }
 
 main .quality .process div {
@@ -434,24 +469,24 @@ main .quality .process div {
 }
 
 main .quality .process div p {
-  color: #DFC4BC;
+  color: #E1D9D9;
   margin: 5px 0px 25px 0px;
 }
 
 main .quality .process div button {
   color: #fff;
-  background-color: #7c050f;
+  background-color: #56070C;
   font-family: 'Lexend Exa';
   text-align: center;
   width: 150px;
   height: 40px;
   border: none;
-  box-shadow: 4px 4px 10px 0px #00000080;
+  box-shadow: 4px 4px 10px 0px #0000005a;
 }
 
 main .quality .process div button:hover {
   cursor: pointer;
   background-color: #0f0510;
-  border: 3px solid #7c050f;
+  border: 3px solid #56070C;
   transition: 0.5s;
 }
