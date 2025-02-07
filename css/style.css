@@ -233,7 +233,6 @@ main .colecao .text-colecao button:hover {
   color: #56070C;
   transition: 0.5s;
 }
-
 @media (max-width: 768px) {
   main .colecao .text-colecao p {
     width: 90%;
@@ -264,7 +263,6 @@ main .colecao .text-colecao button:hover {
     height: 30px;
   }
 }
-
 
 main .wines {
   display: grid;
@@ -329,7 +327,6 @@ main .zerotwo h2 {
   text-align: center;
 }
 
-
 main .sophistication {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -341,14 +338,12 @@ main .sophistication {
   padding: 0px 20px;
 }
 
-
 main .sophistication div img {
   width: 100%;
   max-width: 400px;
   height: auto;
   transition: 0.5s;
 }
-
 
 main .sophistication .text-sophistication {
   width: 90%;
@@ -379,7 +374,6 @@ main .sophistication .text-sophistication ul li a {
   color: #310729;
   font-size: clamp(14px, 2vw, 18px);
 }
-
 
 main .sophistication .text-sophistication ul li a::before {
   content: '';
