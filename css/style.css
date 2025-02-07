@@ -150,19 +150,44 @@ nav {
   padding-top: 100px;
   font-family: "Lexend Exa";
   color: #fff;
-  width: 650px;
+  width: 615px;
 }
 
 .main-header div h1 {
   color: #fff;
   font-size: min(50px, 5vw);
   font-weight: 500;
-  margin-bottom: 10px;
 }
 
 .main-header div p {
   text-align: justify;
-  font-size: 18px;
+  font-size: min(18px, 3vw);
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.main-header div ul li a {
+  position: relative;
+  font-family: 'Lexend Exa';
+  margin-top: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+.main-header div ul li a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: .3s;
+}
+
+.main-header div ul li a:hover::before {
+  width: 100%;
 }
 
 .main-header img {
@@ -548,9 +573,10 @@ main .history .data {
   color: #310729;
   font-size: 20px;
   font-family: "Ibarra Real Nova";
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 
 main .history .data h2 {
   font-size: 80px;
