@@ -188,7 +188,7 @@ main .zeroone h2 {
 }
 
 main .colecao .text-colecao {
-  color: #310729 ;
+  color: #310729;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -200,7 +200,7 @@ main .colecao .text-colecao h2 {
   font-size: 44px;
   font-family: 'Ibarra Real Nova';
   text-align: center;
-  color: #310729 ;
+  color: #310729;
 } 
 
 main .colecao .text-colecao p {
@@ -229,6 +229,38 @@ main .colecao .text-colecao button:hover {
   color: #56070C;
   transition: 0.5s;
 }
+
+@media (max-width: 768px) {
+  main .colecao .text-colecao p {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  main .colecao .text-colecao h2 {
+    font-size: 36px;
+  }
+
+  main .colecao .text-colecao button {
+    width: 120px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  main .colecao .text-colecao p {
+    font-size: 14px;
+  }
+
+  main .colecao .text-colecao h2 {
+    font-size: 28px;
+  }
+
+  main .colecao .text-colecao button {
+    width: 100px;
+    height: 30px;
+  }
+}
+
 
 main .wines {
   display: grid;
