@@ -47,7 +47,7 @@ nav {
 
 .nav-list li::before {
   content: '';
-  position:absolute;
+  position: absolute;
   top: 100%;
   left: 0;
   width: 0;
@@ -132,7 +132,7 @@ nav {
 }
 
 .main-header {
-  background-image: url('../images/bg2.jpg');
+  background-image: url('../images/bg4.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -183,10 +183,10 @@ main .zeroone h2 {
   font-size: 150px;
   font-family: 'Ibarra Real Nova';
   text-shadow:
-     1px  1px 0 #56070C,
-    -1px  1px 0 #56070C,
+    1px 1px 0 #56070C,
+    -1px 1px 0 #56070C,
     -1px -1px 0 #56070C,
-     1px -1px 0 #56070C;
+    1px -1px 0 #56070C;
   letter-spacing: 16px;
   text-align: center;
 }
@@ -205,14 +205,14 @@ main .colecao .text-colecao h2 {
   font-family: 'Ibarra Real Nova';
   text-align: center;
   color: #310729;
-} 
+}
 
 main .colecao .text-colecao p {
   font-family: 'Lexend Exa';
   font-size: 18px;
   text-align: center;
   width: 500px;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -233,6 +233,7 @@ main .colecao .text-colecao button:hover {
   color: #56070C;
   transition: 0.5s;
 }
+
 @media (max-width: 768px) {
   main .colecao .text-colecao p {
     width: 90%;
@@ -311,7 +312,7 @@ main .center-line {
 main .center-line div {
   height: 100px;
   width: 1px;
-  background-color: #56070C; 
+  background-color: #56070C;
 }
 
 main .zerotwo h2 {
@@ -319,10 +320,10 @@ main .zerotwo h2 {
   font-size: 150px;
   font-family: 'Ibarra Real Nova';
   text-shadow:
-     1px  1px 0 #56070C,
-    -1px  1px 0 #56070C,
+    1px 1px 0 #56070C,
+    -1px 1px 0 #56070C,
     -1px -1px 0 #56070C,
-     1px -1px 0 #56070C;
+    1px -1px 0 #56070C;
   letter-spacing: 16px;
   text-align: center;
 }
@@ -355,7 +356,6 @@ main .sophistication .text-sophistication h2 {
   font-family: 'Ibarra Real Nova';
   font-size: clamp(30px, 5vw, 50px);
   color: #310729;
-  margin-bottom: 20px;
 }
 
 main .sophistication .text-sophistication p {
@@ -363,6 +363,7 @@ main .sophistication .text-sophistication p {
   font-size: clamp(14px, 2vw, 18px);
   line-height: 1.8;
   color: #310729;
+  margin-top: 10px;
   margin-bottom: 15px;
 }
 
@@ -421,10 +422,10 @@ main .zerothree h2 {
   font-size: 150px;
   font-family: 'Ibarra Real Nova';
   text-shadow:
-     1px  1px 0 #56070C,
-    -1px  1px 0 #56070C,
+    1px 1px 0 #56070C,
+    -1px 1px 0 #56070C,
     -1px -1px 0 #56070C,
-     1px -1px 0 #56070C;
+    1px -1px 0 #56070C;
   letter-spacing: 16px;
   text-align: center;
 }
@@ -438,18 +439,21 @@ main .quality {
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  margin-bottom: 50px;
 }
 
 main .quality .text-quality {
   width: 500px;
   text-align: center;
   font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
 
 main .quality .text-quality h2 {
   font-family: "Ibarra Real Nova";
   font-size: 50px;
+  margin-bottom: 10px;
 }
 
 main .quality .process {
@@ -504,4 +508,96 @@ main .quality .process div button:hover {
   background-color: #0f0510;
   border: 3px solid #56070C;
   transition: 0.5s;
+}
+
+main .zerofour h2 {
+  color: #fff;
+  font-size: 150px;
+  font-family: 'Ibarra Real Nova';
+  text-shadow:
+    1px 1px 0 #56070C,
+    -1px 1px 0 #56070C,
+    -1px -1px 0 #56070C,
+    1px -1px 0 #56070C;
+  letter-spacing: 16px;
+  text-align: center;
+}
+
+main .history .first {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  margin-bottom: 30px;
+}
+
+main .history .first .title-history {
+  font-family: "Ibarra Real Nova";
+  align-self: center;
+  justify-self: right;
+  color: #310729;
+}
+
+main .history .first .title-history h2 {
+  font-size: 40px;
+  text-align: right;
+  width: 350px;
+  font-weight: 500;
+}
+
+main .history .data {
+  color: #310729;
+  font-size: 20px;
+  font-family: "Ibarra Real Nova";
+  text-align: center;
+}
+
+
+main .history .data h2 {
+  font-size: 80px;
+  font-weight: 300;
+  text-shadow: 0px 5px 10px #31072950;
+}
+
+main .history .data ul li a {
+  position: relative;
+  font-family: 'Lexend Exa';
+  margin-top: 20px;
+  text-decoration: none;
+  color: #310729;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+main .history .data ul li a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #310729;
+  transition: .3s;
+}
+
+main .history .data ul li a:hover::before {
+  width: 100%;
+}
+
+main .history .second {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  justify-items: right;
+}
+
+main .history .second .text-history {
+  font-family: "Lexend Exa";
+  font-size: 18px;
+  color: #310729;
+  justify-self: left;
+  width: 500px;
+}
+
+main .history .second .text-history p {
+  margin-bottom: 20px;
 }
