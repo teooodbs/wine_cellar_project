@@ -132,30 +132,25 @@ nav {
 }
 
 .main-header {
-  background-image: url('../images/bg4.jpg');
+  background-image: url('../images/bg3.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 85vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  padding-right: 80px;
   padding-left: 30px;
-  gap: 40px;
 }
 
 .main-header div {
   padding-top: 100px;
   font-family: "Lexend Exa";
   color: #fff;
-  width: 615px;
+  width: min(615px, 50vw);
 }
 
 .main-header div h1 {
   color: #fff;
-  font-size: min(50px, 5vw);
+  font-size: min(50px, 5.5vw);
   font-weight: 500;
 }
 
@@ -166,33 +161,18 @@ nav {
   margin-bottom: 30px;
 }
 
-.main-header div ul li a {
-  position: relative;
-  font-family: 'Lexend Exa';
-  margin-top: 20px;
-  text-decoration: none;
+.main-header div button {
   color: #fff;
-  font-size: clamp(14px, 2vw, 18px);
+  background-color: #56070C;
+  font-family: 'Lexend Exa';
+  text-align: center;
+  width: 260px;
+  height: 40px;
+  border: none;
 }
 
-.main-header div ul li a::before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #fff;
-  transition: .3s;
-}
-
-.main-header div ul li a:hover::before {
-  width: 100%;
-}
-
-.main-header img {
-  margin-top: 40px;
-  width: max(230px, 18vw);
+.main-header div button:hover {
+  cursor: pointer;
 }
 
 span {
@@ -416,31 +396,6 @@ main .sophistication .text-sophistication ul li a:hover::before {
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  main .sophistication {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  main .sophistication .text-sophistication h2 {
-    font-size: 36px;
-  }
-
-  main .sophistication .text-sophistication p {
-    font-size: 16px;
-  }
-
-  main .sophistication .text-sophistication {
-    text-align: center;
-  }
-
-  main .sophistication .text-sophistication ul {
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-  }
-}
-
 main .zerothree h2 {
   background-color: #E1D9D9;
   color: #E1D9D9;
@@ -535,6 +490,40 @@ main .quality .process div button:hover {
   transition: 0.5s;
 }
 
+@media (max-width: 768px) {
+  main .sophistication {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  main .sophistication .text-sophistication h2 {
+    font-size: 36px;
+  }
+
+  main .sophistication .text-sophistication p {
+    font-size: 16px;
+  }
+
+  main .sophistication .text-sophistication {
+    text-align: center;
+  }
+
+  main .sophistication .text-sophistication ul {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+  }
+  main .quality .text-quality {
+    width: 430px;
+  }
+  main .quality .text-quality h2 {
+    font-size: 36px;
+  }
+  main .quality .text-quality p {
+    font-size: 16px;
+  }
+}
+
 main .zerofour h2 {
   color: #fff;
   font-size: 150px;
@@ -563,10 +552,14 @@ main .history .first .title-history {
 }
 
 main .history .first .title-history h2 {
-  font-size: 40px;
+  font-size: min(40px, 5vw);
   text-align: right;
-  width: 350px;
+  width: min(350px, 40vw);
   font-weight: 500;
+}
+
+main .history .first .img-history img {
+   width: min(40vw, 340px); 
 }
 
 main .history .data {
@@ -618,7 +611,7 @@ main .history .second {
 
 main .history .second .text-history {
   font-family: "Lexend Exa";
-  font-size: 18px;
+  font-size: min(18px, 40vw);
   color: #310729;
   justify-self: left;
   width: 500px;
@@ -626,4 +619,29 @@ main .history .second .text-history {
 
 main .history .second .text-history p {
   margin-bottom: 20px;
+}
+
+@media (max-width: 950px) {
+  main .history .first {
+    gap: 5px
+  }
+  main .history .first .title-history {
+    justify-self: center;
+  }
+  main .history .first .title-history h2 {
+    text-align: center;
+  } 
+  
+  main .history .second {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+
+  main .history .second .text-history {
+    justify-self: center;
+    text-align: center;
+    width: 320px;
+    font-size: 16px;
+  }
 }
