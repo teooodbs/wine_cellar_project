@@ -540,27 +540,49 @@ main .zerofour h2 {
 main .history .first {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 100px;
+  gap: 50px;
   margin-bottom: 30px;
+  align-items: center;
+  justify-items: center;
 }
 
 main .history .first .title-history {
   font-family: "Ibarra Real Nova";
   align-self: center;
-  justify-self: right;
   color: #310729;
+  text-align: right;
 }
 
 main .history .first .title-history h2 {
   font-size: min(40px, 5vw);
-  text-align: right;
-  width: min(350px, 40vw);
+  width: min(350px, 80%);
   font-weight: 500;
+  text-align: right;
 }
 
 main .history .first .img-history img {
-   width: min(40vw, 340px); 
+  width: min(40vw, 340px);
 }
+
+@media (max-width: 768px) {
+  main .history .first {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  main .history .first .title-history {
+    text-align: left;
+  }
+
+  main .history .first .title-history h2 {
+    text-align: left;
+  }
+
+  main .history .first .img-history img {
+    width: 50%;
+  }
+}
+
 
 main .history .data {
   color: #310729;
@@ -601,47 +623,75 @@ main .history .data ul li a:hover::before {
   width: 100%;
 }
 
+main .history .first {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  margin-bottom: 30px;
+  justify-items: center;
+}
+
+main .history .first .title-history {
+  font-family: "Ibarra Real Nova";
+  align-self: center;
+  color: #310729;
+  text-align: center;
+}
+
+main .history .first .title-history h2 {
+  font-size: min(40px, 5vw);
+  width: min(350px, 80%);
+  font-weight: 500;
+  text-align: center;
+}
+
+main .history .first .img-history img {
+  width: min(90%, 340px);
+}
+
 main .history .second {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
-  justify-items: right;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: center;
 }
 
 main .history .second .text-history {
   font-family: "Lexend Exa";
-  font-size: min(18px, 40vw);
+  font-size: clamp(16px, 2vw, 18px);
   color: #310729;
-  justify-self: left;
-  width: 500px;
+  text-align: center;
+  max-width: 90%;
 }
 
 main .history .second .text-history p {
   margin-bottom: 20px;
 }
 
-@media (max-width: 950px) {
+@media (min-width: 950px) {
   main .history .first {
-    gap: 5px
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    justify-items: normal;
   }
+
   main .history .first .title-history {
-    justify-self: center;
+    text-align: right;
   }
+
   main .history .first .title-history h2 {
-    text-align: center;
-  } 
-  
+    text-align: right;
+  }
+
   main .history .second {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    justify-items: right;
   }
 
   main .history .second .text-history {
-    justify-self: center;
-    text-align: center;
-    width: 320px;
-    font-size: 16px;
+    text-align: left;
+    width: 500px;
   }
 }
