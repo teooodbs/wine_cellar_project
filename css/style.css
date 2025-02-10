@@ -79,6 +79,7 @@ nav {
   }
 
   .nav-list {
+    display: none;
     position: absolute;
     top: 15vh;
     right: 0;
@@ -551,6 +552,7 @@ main .history .first .title-history {
   align-self: center;
   color: #310729;
   text-align: right;
+  justify-self: center;
 }
 
 main .history .first .title-history h2 {
@@ -558,6 +560,12 @@ main .history .first .title-history h2 {
   width: min(350px, 80%);
   font-weight: 500;
   text-align: right;
+}
+
+main .history .first .img-history {
+  justify-self: center;
+  display: flex;
+  justify-content: center;
 }
 
 main .history .first .img-history img {
@@ -580,7 +588,13 @@ main .history .first .img-history img {
 
   main .history .first .img-history img {
     width: 50%;
+    justify-self: center;
   }
+  
+  main .history .first .img-history{
+    justify-self: center;
+  }
+  
 }
 
 main .history .data {
@@ -623,8 +637,6 @@ main .history .data ul li a:hover::before {
   width: 100%;
 }
 
-
-
 main .history .first {
   display: grid;
   grid-template-columns: 1fr;
@@ -638,6 +650,7 @@ main .history .first .title-history {
   align-self: center;
   color: #310729;
   text-align: center;
+  justify-self: center;
 }
 
 main .history .first .title-history h2 {
@@ -645,10 +658,12 @@ main .history .first .title-history h2 {
   width: min(350px, 80%);
   font-weight: 500;
   text-align: center;
+  justify-self: center;
 }
 
 main .history .first .img-history img {
   width: min(90%, 340px);
+  justify-self: center;
 }
 
 main .history .second {
@@ -665,10 +680,12 @@ main .history .second .text-history {
   color: #310729;
   text-align: center;
   max-width: 90%;
+  justify-self: center;
 }
 
 main .history .second .text-history p {
   margin-bottom: 20px;
+  justify-self: center;
 }
 
 @media (min-width: 768px) {
@@ -676,28 +693,35 @@ main .history .second .text-history p {
     grid-template-columns: 1fr 1fr;
     gap: 100px;
     justify-items: normal;
+    justify-self: center;
   }
 
   main .history .first .title-history {
-    text-align: right;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
   }
 
   main .history .first .title-history h2 {
-    text-align: right;
+    text-align: center;
+    justify-self: center;
+  
   }
 
   main .history .first .img-history img {
     width: 300px;
+    justify-self: center;
   }
 
   main .history .second {
     grid-template-columns: 1fr 1fr;
     gap: 100px;
-    justify-items: right;
+    justify-items: center;
+    width: 100%;
   }
 
   main .history .second .text-history {
-    text-align: left;
+    text-align: center;
     width: 500px;
   }
   main .history .data {
