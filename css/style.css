@@ -19,6 +19,11 @@ nav a {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .logo span {
@@ -79,6 +84,7 @@ nav {
   }
 
   .nav-list {
+    display: none;
     position: absolute;
     top: 15vh;
     right: 0;
@@ -540,39 +546,74 @@ main .zerofour h2 {
 main .history .first {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 100px;
+  gap: 50px;
   margin-bottom: 30px;
+  align-items: center;
+  justify-items: center;
 }
 
 main .history .first .title-history {
   font-family: "Ibarra Real Nova";
   align-self: center;
-  justify-self: right;
   color: #310729;
+  text-align: right;
+  justify-self: center;
 }
 
 main .history .first .title-history h2 {
   font-size: min(40px, 5vw);
-  text-align: right;
-  width: min(350px, 40vw);
+  width: min(350px, 80%);
   font-weight: 500;
+  text-align: right;
+}
+
+main .history .first .img-history {
+  justify-self: center;
+  display: flex;
+  justify-content: center;
 }
 
 main .history .first .img-history img {
-   width: min(40vw, 340px); 
+  width: min(40vw, 340px);
+}
+
+@media (max-width: 768px) {
+  main .history .first {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  main .history .first .title-history {
+    text-align: left;
+  }
+
+  main .history .first .title-history h2 {
+    text-align: left;
+  }
+
+  main .history .first .img-history img {
+    width: 50%;
+    justify-self: center;
+  }
+  
+  main .history .first .img-history{
+    justify-self: center;
+  }
+  
 }
 
 main .history .data {
   color: #310729;
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Ibarra Real Nova";
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 main .history .data h2 {
-  font-size: 80px;
+  font-size: 55px;
   font-weight: 300;
   text-shadow: 0px 5px 10px #31072950;
 }
@@ -601,47 +642,208 @@ main .history .data ul li a:hover::before {
   width: 100%;
 }
 
+main .history .first {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  margin-bottom: 30px;
+  justify-items: center;
+}
+
+main .history .first .title-history {
+  font-family: "Ibarra Real Nova";
+  align-self: center;
+  color: #310729;
+  text-align: center;
+  justify-self: center;
+}
+
+main .history .first .title-history h2 {
+  font-size: min(40px, 5vw);
+  width: min(350px, 80%);
+  font-weight: 500;
+  text-align: center;
+  justify-self: center;
+}
+
+main .history .first .img-history img {
+  width: min(90%, 340px);
+  justify-self: center;
+}
+
 main .history .second {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
-  justify-items: right;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: center;
 }
 
 main .history .second .text-history {
   font-family: "Lexend Exa";
-  font-size: min(18px, 40vw);
+  font-size: clamp(16px, 2vw, 18px);
   color: #310729;
-  justify-self: left;
-  width: 500px;
+  text-align: center;
+  max-width: 90%;
+  justify-self: center;
 }
 
 main .history .second .text-history p {
   margin-bottom: 20px;
+  justify-self: center;
 }
 
-@media (max-width: 950px) {
+@media (min-width: 768px) {
   main .history .first {
-    gap: 5px
-  }
-  main .history .first .title-history {
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    justify-items: normal;
     justify-self: center;
   }
+
+  main .history .first .title-history {
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+  }
+
   main .history .first .title-history h2 {
     text-align: center;
-  } 
+    justify-self: center;
   
+  }
+
+  main .history .first .img-history img {
+    width: 300px;
+    justify-self: center;
+  }
+
   main .history .second {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
     justify-items: center;
-    gap: 20px;
+    width: 100%;
   }
 
   main .history .second .text-history {
-    justify-self: center;
     text-align: center;
-    width: 320px;
+    width: 500px;
+  }
+  main .history .data {
     font-size: 16px;
   }
+
+  main .history .data h2 {
+    font-size: 40px;
+  }
+}
+
+footer {
+  margin-top: 50px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0510;
+}
+
+footer .logo-footer {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
+  width: 200px;
+  height: 200px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-family: "Lexend Exa";
+  transition: .5s;
+}
+
+footer .logo-footer p span {
+  font-size: 65px;
+}
+
+footer .logo-footer:hover {
+  rotate: 30deg;
+}
+
+footer .address h2 {
+  font-size: 36px;
+  font-weight: 300;
+  font-family: "Ibarra Real Nova";
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+footer .address h2 a {
+  color: white;
+  text-decoration: none;
+  transition: .5s;
+}
+
+footer .address h2 a:hover {
+  color: #56070C;
+}
+
+footer .social-media {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .social-media .contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+footer .social-media .contacts p {
+  font-size: 18px;
+  font-family: "Lexend Exa";
+  color: #fff;
+}
+
+footer .social-media .contacts a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+footer .social-media .contacts i {
+  color: #fff;
+  font-size: 35px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+footer .social-media .contacts i:hover {
+  transform: scale(1.3);
+}
+
+footer .social-media .policies {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+footer .social-media .policies p {
+  font-family: "Lexend Exa";
+  font-weight: 300;
+  color: #fff;
+}
+
+footer .social-media .policies p a {
+  color: #fff;
+  text-decoration: none;
+  transition: .5s;
+}
+
+footer .social-media .policies p a:hover {
+  color:#56070C
 }
