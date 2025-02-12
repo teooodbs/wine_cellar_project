@@ -175,10 +175,13 @@ nav {
   width: 260px;
   height: 40px;
   border: none;
+  transition: .5s;
 }
 
 .main-header div button:hover {
   cursor: pointer;
+  background-color: transparent;
+  border: 3px solid #56070C;
 }
 
 span.red {
@@ -456,12 +459,20 @@ main .quality .process div {
   box-shadow: 4px 4px 10px 0px #0000005a;
 }
 
-main .quality .process div img {
+/* main .quality .process div img {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-main .quality .process div img:hover {
+main .quality .process div:hover img {
   transform: scale(1.1);
+} */
+
+main .quality .process div {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+main .quality .process div:hover {
+  transform: translateY(-10px);
 }
 
 main .quality .process div p {
@@ -751,12 +762,15 @@ footer .logo-footer {
   font-family: "Lexend Exa";
   transition: .5s;
 }
+
 footer .logo-footer p span {
   font-size: 65px;
 }
+
 footer .logo-footer:hover {
-  rotate: 30deg;
+  rotate: 45deg;
 }
+
 footer .address h2 {
   font-size: 36px;
   font-weight: 300;
@@ -764,60 +778,74 @@ footer .address h2 {
   text-align: center;
   margin-bottom: 100px;
 }
+
 footer .address h2 a {
   color: white;
   text-decoration: none;
   transition: .5s;
 }
+
 footer .address h2 a:hover {
-  color: #56070C;
+  opacity: 0.5;
 }
+
 footer .social-media {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
 footer .social-media .contacts {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
 }
+
 footer .social-media .contacts p {
   font-size: 18px;
   font-family: "Lexend Exa";
   color: #fff;
 }
+
 footer .social-media .contacts a {
   display: flex;
   justify-content: center;
   text-decoration: none;
 }
+
 footer .social-media .contacts i {
   color: #fff;
   font-size: 35px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 footer .social-media .contacts i:hover {
   transform: scale(1.3);
 }
+
 footer .social-media .policies {
   display: flex;
   align-items: center;
-  gap: 90px;
+  gap: 20px;
 }
+
 footer .social-media .policies p {
   font-family: "Lexend Exa";
   font-weight: 300;
   color: #fff;
 }
+
 footer .social-media .policies p a {
   color: #fff;
   text-decoration: none;
   transition: .5s;
 }
+
 footer .social-media .policies p a:hover {
-  color:#56070C
+  opacity: 0.5;
 }
 
 @media (max-width: 768px) {
@@ -832,21 +860,28 @@ footer .social-media .policies p a:hover {
   footer .address h2 {
     font-size: 35px;
   }
+
+  footer .social-media .contacts {
+    gap: 10px;
+  }
+
+  footer .social-media .policies {
+    margin-left: 20px;
+    gap: 10px;
+  }
+  
   footer .social-media .contacts p {
-    font-size: 18px;
+    font-size: 15px;
+
   }
   footer .social-media .contacts i {
     font-size: 25px;
-    position: relative;
-    right: 10px;
   }
   footer .social-media .policies p {
     font-size: 15px;
     text-align: center;
   }
   footer .social-media .policies p a {
-    font-size: 15px;
-    position: relative;
-    left: 29px;
-  }
+    font-size: 12px;
+  } 
 }
