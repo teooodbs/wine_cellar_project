@@ -786,7 +786,7 @@ footer .address h2 a {
 }
 
 footer .address h2 a:hover {
-  opacity: 0.3;
+  color: #56070C;
 }
 
 footer .social-media {
@@ -845,7 +845,7 @@ footer .social-media .policies p a {
 }
 
 footer .social-media .policies p a:hover {
-  opacity: 0.3;
+  opacity: 0,3;
 }
 
 @media (max-width: 768px) {
