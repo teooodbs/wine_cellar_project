@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Lexend+Exa:wght@100..900&display=swap');
+        .font-lexend { font-family: 'Lexend Exa', sans-serif; }
+        .font-ibarra { font-family: 'Ibarra Real Nova', serif; }
+    </style>
+</head>
+<body class="m-0 p-0 box-border overflow-x-hidden">
+    
+    <nav class="flex justify-around items-center bg-white h-[15vh] font-lexend">
+        <a href="#" class="text-[#A7AA37] no-underline transition duration-300 logo text-2xl uppercase tracking-[4px] hover:scale-110">
+            w<span class="text-3xl">W</span>w
+        </a>
+        <ul class="hidden md:flex list-none">
+            <li class="relative tracking-[3px] ml-12 after:content-[''] after:absolute after:top-full after:left-0 after:w-0 after:h-[2px] after:bg-[#A7AA37] after:transition-all after:duration-300 hover:after:w-full">
+                <a href="#" class="text-[#A7AA37]">home</a>
+            </li>
+            <li class="relative tracking-[3px] ml-12 after:content-[''] after:absolute after:top-full after:left-0 after:w-0 after:h-[2px] after:bg-[#A7AA37] after:transition-all after:duration-300 hover:after:w-full">
+                <a href="#" class="text-[#A7AA37]">contato</a>
+            </li>
+            <li class="relative tracking-[3px] ml-12 after:content-[''] after:absolute after:top-full after:left-0 after:w-0 after:h-[2px] after:bg-[#A7AA37] after:transition-all after:duration-300 hover:after:w-full">
+              <a href="#" class="text-[#A7AA37]">saiba Mais</a>
+          </li>
+          <li class="relative tracking-[3px] ml-12 after:content-[''] after:absolute after:top-full after:left-0 after:w-0 after:h-[2px] after:bg-[#A7AA37] after:transition-all after:duration-300 hover:after:w-full">
+            <a href="#" class="text-[#A7AA37]">comprar</a>
+        </li>
+        </ul>
+        
+        <div class="md:hidden cursor-pointer" id="mobile-menu">
+            <div class="w-8 h-[2px] bg-[#A7AA37] mb-2 transition-all"></div>
+            <div class="w-8 h-[2px] bg-[#A7AA37] mb-2 transition-all"></div>
+            <div class="w-8 h-[2px] bg-[#A7AA37] transition-all"></div>
+        </div>
+    </nav>
+    
+    <ul id="nav-list" class="hidden md:hidden flex-col items-center justify-around bg-white absolute top-[15vh] right-0 w-screen h-[85vh] transform translate-x-full transition-transform duration-300">
+        <li class="mr-12 opacity-0 transition-opacity duration-300"><a href="#" class="text-[#A7AA37]">Home</a></li>
+        <li class="mr-12 opacity-0 transition-opacity duration-300"><a href="#" class="text-[#A7AA37]">Sobre</a></li>
+    </ul>
+    
+    <header class="flex flex-col items-center h-[85vh]">
+        <div class="flex items-center justify-center">
+            <div class="h-[100px] w-[1px] bg-gradient-to-t from-[#A7AA37] to-white"></div>
+        </div>
+        <h1 class="font-ibarra font-semibold font-semibold text-9xl text-center text-[#A7AA37] mt-[20px] mb-[10px]">White</h1>
+        <p class="font-lexend text-base w-[500px] font-normal text-center text-[#A7AA37] mb-5">Estagia em cubas e em cascos de carvalho.</p>
+        <p class="font-lexend text-base w-[500px] font-normal text-center text-[#A7AA37] mb-5">São vinhos que conservam a frescura num registo mais seco ou mais doce consoante a altura em que se dá a fortificação do vinho.</p>
+    </header>
+    <main>
+
+    </main>
+</body>
+</html>
