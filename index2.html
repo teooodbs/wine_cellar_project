@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WWW</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400;1,700&family=Lexend+Exa:wght@100;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Estilos customizados para pseudo-elementos -->
+    <style>
+      /* Efeito underline nos links da nav */
+      .nav-list li a::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: 0.3s;
+      }
+      .nav-list li a:hover::before {
+        width: 100%;
+      }
+      /* Efeito underline para os links das seções "Sofisticação" e "História" */
+      .sophistication .text-sophistication ul li a::before,
+      .history .data ul li a::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #310729;
+        transition: 0.3s;
+      }
+      .sophistication .text-sophistication ul li a:hover::before,
+      .history .data ul li a:hover::before {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="m-0 p-0 box-border">
+    <header>
+      <nav class="flex justify-around items-center font-[Lexend_Exa] bg-[#0f0510] h-[15vh]">
+        <a
+          href="/"
+          class="text-[24px] uppercase tracking-[4px] transition-transform duration-300 hover:scale-110"
+        >
+          W<span class="text-[30px] text-[#56070C]">W</span>W
+        </a>
+        <div class="mobile-menu block lg:hidden cursor-pointer">
+          <div class="w-8 h-[2px] bg-white m-2 transition duration-300"></div>
+          <div class="w-8 h-[2px] bg-white m-2 transition duration-300"></div>
+          <div class="w-8 h-[2px] bg-white m-2 transition duration-300"></div>
+        </div>
+        <ul class="nav-list hidden lg:flex list-none">
+          <li class="relative tracking-[3px] ml-[50px]">
+            <a href="#colecao" class="transition duration-300">coleções</a>
+          </li>
+          <li class="relative tracking-[3px] ml-[50px]">
+            <a href="#footer" class="transition duration-300">contato</a>
+          </li>
+          <li class="relative tracking-[3px] ml-[50px]">
+            <a href="#saibamais" class="transition duration-300">saiba mais</a>
+          </li>
+          <li class="relative tracking-[3px] ml-[50px]">
+            <a href="/" class="transition duration-300">comprar</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div
+        class="main-header bg-cover bg-center bg-no-repeat bg-fixed h-[85vh] pl-8"
+        style="background-image: url('../images/bg3.jpg')"
+      >
+        <div class="pt-[100px] font-[Lexend_Exa] text-white w-full max-w-[50vw]">
+          <h1 class="text-white text-[min(50px,5.5vw)] font-medium">
+            Bem-Vindos a World <span class="text-[#56070C]">Wines</span> Web
+          </h1>
+          <p class="text-justify text-[min(18px,3vw)] mt-2 mb-8">
+            Encontre na nossa adega online vinhos que transformam qualquer instante em algo
+            único. Cada garrafa é uma história esperando para ser compartilhada, entregue com todo o
+            carinho até sua porta.
+          </p>
+          <button
+            class="text-white bg-[#56070C] font-[Lexend_Exa] text-center w-[260px] h-[40px] border-0 transition duration-500 hover:bg-transparent hover:border-2 hover:border-[#56070C]"
+          >
+            Conheça mais sobre nós
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-24">
+      <div id="colecao" class="zeroone">
+        <h2
+          class="text-[150px] font-[Ibarra_Real_Nova] tracking-[16px] text-center"
+          style="-webkit-text-stroke: 1px #56070C; color: transparent;"
+        >
+          01
+        </h2>
+      </div>
+
+      <section class="colecao">
+        <div class="text-colecao grid place-items-center mb-20">
+          <h2
+            class="text-[44px] font-[Ibarra_Real_Nova] text-center text-[#310729]"
+          >
+            Coleção de vinhos WWW
+          </h2>
+          <p
+            class="font-[Lexend_Exa] text-[18px] text-center w-full max-w-[500px] mt-2 mb-5 text-[#310729]"
+          >
+            Nossa coleção de vinhos reflete nossa paixão pela enologia. Entre tintos elegantes,
+            brancos aromáticos, cada garrafa tem sua personalidade. Vinhos do Velho e do Novo Mundo
+            compõem essa seleção, trazendo o melhor de cada safra. Brindar com um bom vinho é
+            transformar qualquer ocasião em algo memorável.
+          </p>
+          <button
+            class="text-white bg-[#56070C] font-[Lexend_Exa] text-center w-[150px] h-[40px] border-0"
+          >
+            Ver Coleções
+          </button>
+        </div>
+      </section>
+
+      <section class="wines grid grid-cols-1 md:grid-cols-3 place-items-center mb-24">
+        <div class="wine-red text-center">
+          <a href="#">
+            <img
+              src="images/wine-tinto-copy.png"
+              alt=""
+              class="h-[400px] transition duration-500 hover:opacity-50"
+            />
+          </a>
+          <p class="text-[50px] font-[Ibarra_Real_Nova] text-[#8C3A42]">Red</p>
+        </div>
+        <div class="wine-white text-center">
+          <a href="#">
+            <img
+              src="images/wine-white-copy.png"
+              alt=""
+              class="h-[400px] transition duration-500 hover:opacity-50"
+            />
+          </a>
+          <p class="text-[50px] font-[Ibarra_Real_Nova] text-[#A7AA37]">White</p>
+        </div>
+        <div class="wine-rose text-center">
+          <a href="#">
+            <img
+              src="images/wine-rose-copy.png"
+              alt=""
+              class="h-[400px] transition duration-500 hover:opacity-50"
+            />
+          </a>
+          <p class="text-[50px] font-[Ibarra_Real_Nova] text-[#DF587D]">Rosé</p>
+        </div>
+      </section>
+
+      <div class="center-line flex items-center justify-center mb-24">
+        <div class="h-[100px] w-[1px] bg-[#56070C]"></div>
+      </div>
+
+      <div class="zerotwo">
+        <h2
+          class="text-[150px] font-[Ibarra_Real_Nova] tracking-[16px] text-center"
+          style="-webkit-text-stroke: 1px #56070C; color: transparent;"
+        >
+          02
+        </h2>
+      </div>
+
+      <section
+        class="sophistication grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-items-center my-12 px-5"
+      >
+        <div class="img-sophistication">
+          <img
+            src="images/sec02.jpg"
+            alt=""
+            class="w-full max-w-[400px] h-auto transition duration-500"
+          />
+        </div>
+        <div class="text-sophistication w-full max-w-[400px] text-left">
+          <h2
+            class="font-[Ibarra_Real_Nova] text-[#310729]"
+            style="font-size: clamp(30px, 5vw, 50px);"
+          >
+            Sofisticação
+          </h2>
+          <p
+            class="font-[Lexend_Exa] leading-7 text-[#310729] mt-2 mb-4"
+            style="font-size: clamp(14px, 2vw, 18px);"
+          >
+            A sofisticação do vinho vai além de seu sabor, envolvendo uma complexa harmonia entre aromas,
+            textura e final. Cada vinhedo, com suas características únicas, traz uma riqueza sensorial que
+            reflete o terroir e o cuidado na vinificação. A maturação em barris de carvalho ou em garrafas
+            acrescenta camadas de complexidade, oferecendo uma experiência única a cada gole. Assim, o
+            vinho se torna não apenas uma bebida, mas uma verdadeira obra de arte que envolve história,
+            cultura e paixão.
+          </p>
+          <ul>
+            <li>
+              <a
+                href="#"
+                class="relative font-[Lexend_Exa] mt-5 text-[#310729] transition duration-300"
+                style="font-size: clamp(14px, 2vw, 18px);"
+                >Veja todas coleções</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="center-line flex items-center justify-center mb-24">
+        <div class="h-[100px] w-[1px] bg-[#56070C]"></div>
+      </div>
+
+      <div id="saibamais" class="zerofour">
+        <h2
+          class="text-[150px] font-[Ibarra_Real_Nova] text-center text-white tracking-[16px]"
+          style="text-shadow:
+            1px 1px 0 #56070C,
+            -1px 1px 0 #56070C,
+            -1px -1px 0 #56070C,
+            1px -1px 0 #56070C;"
+        >
+          04
+        </h2>
+      </div>
+
+      <section class="history">
+        <div
+          class="first grid grid-cols-1 lg:grid-cols-2 gap-12 mb-8 items-center justify-items-center"
+        >
+          <div
+            class="title-history font-[Ibarra_Real_Nova] self-center text-center lg:text-right text-[#310729]"
+          >
+            <h2 class="text-[min(40px,5vw)] font-medium">
+              WWW é vinho. É Brasil. É o mundo dos vinhos ao seu alcance.
+            </h2>
+          </div>
+          <div class="img-history flex justify-center">
+            <img src="images/sec04.jpg" alt="" class="w-[min(40vw,340px)]" />
+          </div>
+        </div>
+        <div
+          class="data flex flex-col items-center text-center text-[#310729] text-[15px] font-[Ibarra_Real_Nova] mb-8"
+        >
+          <h2 class="text-[55px] font-light" style="text-shadow: 0px 5px 10px #31072950;">
+            Desde 1991
+          </h2>
+          <ul>
+            <li>
+              <a
+                href="/"
+                class="relative font-[Lexend_Exa] mt-5 text-[#310729] transition duration-300"
+                style="font-size: clamp(14px, 2vw, 18px);"
+                >Veja a nossa História</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="second grid grid-cols-1 lg:grid-cols-2 gap-5 justify-items-center mt-8">
+          <div class="creator">
+            <img src="images/cat.jpeg" alt="" class="w-[300px]" />
+          </div>
+          <div
+            class="text-history font-[Lexend_Exa] text-center text-[#310729] max-w-[90%]"
+            style="font-size: clamp(16px, 2vw, 18px);"
+          >
+            <p class="mb-5">
+              Félix, um gato sofisticado, sonhava em abrir sua própria adega e, com esforço e
+              persuasão, fundou a World Wines Web, um espaço elegante de vinhos raros. Seu faro
+              apurado e conhecimento conquistaram clientes, incluindo influenciadores e amantes do
+              vinho.
+            </p>
+            <p class="mb-5">
+              Caminhando entre as prateleiras, ele recomendava safras especiais, provando que um gato
+              não precisa só de leite—pode ser um verdadeiro sommelier. 🍷🐱
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="mt-12 pb-8 flex flex-col justify-center items-center bg-[#0f0510]">
+      <div
+        class="logo-footer mt-16 mb-16 text-center text-white w-[200px] h-[200px] border-4 border-white rounded-full flex items-center justify-center text-[50px] font-[Lexend_Exa] transition duration-500 hover:rotate-45"
+      >
+        <p>
+          W<span class="text-[65px]">W</span>W
+        </p>
+      </div>
+      <div class="address mb-12">
+        <h2 class="text-[36px] font-light font-[Ibarra_Real_Nova] text-center">
+          <a
+            href="https://maps.app.goo.gl/5vTvN2RrRdFYV9CB7"
+            target="_blank"
+            class="text-white transition duration-500 hover:text-[#56070C]"
+            >Av. Primeiro de Maio, 720 - Jaguaribe</a
+          >
+        </h2>
+      </div>
+      <div class="social-media w-full flex justify-around px-2">
+        <div class="contacts flex justify-center items-center gap-10">
+          <p class="text-[18px] font-[Lexend_Exa] text-white">Contatos</p>
+          <a href="#">
+            <i
+              class="fa-brands fa-linkedin text-white text-[35px] transition duration-300 hover:scale-125"
+            ></i>
+          </a>
+          <a href="#">
+            <i
+              class="fa-brands fa-github text-white text-[35px] transition duration-300 hover:scale-125"
+            ></i>
+          </a>
+        </div>
+        <div class="policies flex items-center gap-5">
+          <p class="font-[Lexend_Exa] font-light text-white">
+            <a href="#" class="transition duration-500 hover:opacity-70"
+              >política de privacidade</a
+            >
+          </p>
+          <p class="font-[Lexend_Exa] font-light text-white">
+            <a href="#" class="transition duration-500 hover:opacity-70">termos &amp; serviços</a>
+          </p>
+          <p class="font-[Lexend_Exa] font-light text-white">2025&copy;WWW</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/mobile-navbar.js"></script>
+  </body>
+</html>
