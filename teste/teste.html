@@ -6,6 +6,7 @@
     <title>Navbar Tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Lexend+Exa:wght@100..900&display=swap');
         .font-lexend { font-family: 'Lexend Exa', sans-serif; }
@@ -54,7 +55,38 @@
         <p class="font-lexend text-base w-[500px] font-normal text-center text-[#A7AA37] mb-5">São vinhos que conservam a frescura num registo mais seco ou mais doce consoante a altura em que se dá a fortificação do vinho.</p>
     </header>
     <main>
-
-    </main>
+      <section class="py-10">
+        <div class="flex justify-around px-24">
+          <div class="w-44 h-44 flex flex-col justify-center items-center bg-[#A7AA37] text-white font-['Lexend_Exa'] text-xl rounded-full mb-12 transition-transform duration-500 hover:-translate-y-2">
+            <span class="text-5xl material-symbols-outlined">nutrition</span>
+            <p>Fresco</p>
+          </div>
+          <div class="w-44 h-44 flex flex-col justify-center items-center bg-[#A7AA37] text-white font-['Lexend_Exa'] text-xl rounded-full mb-12 transition-transform duration-500 hover:-translate-y-2">
+            <span class="text-5xl material-symbols-outlined">psychiatry</span>
+            <p>Suave</p>
+          </div>
+          <div class="w-44 h-44 flex flex-col justify-center items-center bg-[#A7AA37] text-white font-['Lexend_Exa'] text-xl rounded-full mb-12 transition-transform duration-500 hover:-translate-y-2">
+            <span class="text-5xl material-symbols-outlined">cloud</span>
+            <p>Leve</p>
+          </div>
+        </div>
+        <div class="flex justify-end items-center gap-14 mx-8">
+          <div class="flex flex-col w-[500px] font-['Lexend_Exa']">
+            <h2 class="font-['Ibarra_Real_Nova'] text-6xl font-extrabold">Brisa Dourada</h2>
+            <h3 class="text-[#A7AA37] text-xl font-normal my-2">Frescor e intensidade em harmonia</h3>
+            <p class="font-light text-justify mb-5">
+              De cor amarelo-claro com reflexos dourados, Brisa Dourada combina notas cítricas e tropicais em um aroma vibrante. Leve e refrescante, tem acidez equilibrada e um final suave e persistente. Perfeito para momentos descontraídos e harmonizações leves.
+            </p>
+            <div class="flex gap-10">
+              <button class="bg-[#A7AA37] text-white py-2 px-6 transition-all duration-500 hover:bg-white hover:text-[#A7AA37] border border-[#A7AA37]">Comprar</button>
+              <button class="text-[#A7AA37] transition-all duration-500 hover:tracking-widest">Avaliações</button>
+            </div>
+          </div>
+          <div>
+            <img src="../images/img_page_white2-removebg-preview.png" alt="Brisa Dourada">
+          </div>
+        </div>
+      </section>
+    </main>    
 </body>
 </html>
