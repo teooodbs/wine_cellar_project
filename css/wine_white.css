@@ -185,7 +185,7 @@ nav {
   }
 }
 
-/*  ---------------------------------------------- */
+/* --------------------------------------------- */
 
 
 section.first div.icons {
@@ -206,7 +206,6 @@ section.first div.icons div {
   font-family: "Lexend Exa";
   font-size: 20px;
   border-radius: 50%;
-  margin-bottom: 50px;
   transition: .5s;
 }
 
@@ -218,8 +217,10 @@ section.first div.icons div span {
   font-size: 50px;
 }
 
+/* --------------------------------------------- */
+
 div.brisadovale {
-  margin: 0px 30px;
+  margin: 60px 30px;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -286,13 +287,13 @@ div.text-brisa div.buttons div.reviews:hover {
 
 @media (max-width: 1024px) {
 
-  div.icons {
+  section.first div.icons {
     display: flex;
     justify-content: space-around;
     padding: 0px 100px;
   }
 
-  div.icons div {
+  section.first div.icons div {
     width: 180px;
     height: 180px;
     display: flex;
@@ -308,21 +309,23 @@ div.text-brisa div.buttons div.reviews:hover {
     transition: .5s;
   }
 
-  div.icons div:hover {
+  section.first div.icons div:hover {
     transform: translateY(-10px);
   }
 
-  div.icons div span {
+  section.first div.icons div span {
     font-size: 50px;
   }
 
+  /* --------------------------------------------- */
+
   div.brisadovale {
-    margin: 0px 30px;
+    margin: 0px 30px 60px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    gap: 60px;
+    gap: 20px;
   }
 
   div.text-brisa {
@@ -389,13 +392,13 @@ div.text-brisa div.buttons div.reviews:hover {
 
 @media (max-width: 768px) {
   
-  div.icons {
+  section.first div.icons {
     display: flex;
     justify-content: space-around;
     padding: 0px 20px;
   }
 
-  div.icons div {
+  section.first div.icons div {
     width: 130px;
     height: 130px;
     display: flex;
@@ -411,21 +414,23 @@ div.text-brisa div.buttons div.reviews:hover {
     transition: .5s;
   }
 
-  div.icons div:hover {
+  section.first div.icons div:hover {
     transform: translateY(-10px);
   }
 
-  div.icons div span {
+  section.first div.icons div span {
     font-size: 50px;
   }
 
-  div.brisa-dourada {
-    margin: 0px 30px;
+  /* --------------------------------------------- */
+
+  div.brisadovale {
+    margin: 0px 30px 60px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    gap: 60px;
+    gap: 20px;
   }
 
   div.text-brisa {
@@ -489,16 +494,332 @@ div.text-brisa div.buttons div.reviews:hover {
     letter-spacing: 3px;
   }  
 }
-
+ 
 /* --------------------------------------------- */
 
 section.second .icons {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
+section.second .icons h2 {
+  width: 700px;
+  font-family: "Ibarra Real Nova";
+  font-size: 50px;
+  text-align: center;
+  color: #A7AA37;
+}
 
+section.second .icons div {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 3px solid #A7AA37;
+  border-radius: 50%;
+  transition: .5s;
+}
+
+section.second .icons div:hover {
+  transform: translateY(-10px);
+}
+
+section.second .icons p {
+  font-family: "Lexend Exa";
+  color: #A7AA37;
+  font-size: 30px;
+}
+
+/* --------------------------------------------- */
+
+div.alvorecer-dourado {
+  margin: 30px 30px 60px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+div.text-alvorecer {
+  display: flex;
+  flex-direction: column;
+  width: 502px;
+  font-family: "Lexend Exa";
+}
+
+div.text-alvorecer h2 {
+  font-family: "Ibarra Real Nova";
+  font-size: 60px;
+  font-weight: 800;
+}
+
+div.text-alvorecer h3 {
+  color: #A7AA37;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+div.text-alvorecer p {
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+div.text-alvorecer div.buttons {
+  display: flex;
+  gap: 40px;
+}
+
+div.text-alvorecer div.buttons div.buy {
+  display: flex;
+  gap: 10px;
+  background-color: #A7AA37;
+  color: #fff;
+  padding: 10px 30px;
+  transition: .5s;
+}
+
+div.text-alvorecer div.buttons .buy:hover {
+  background-color: #fff;
+  color: #A7AA37;
+  border: 1px solid #A7AA37;
+}
+
+div.text-alvorecer div.buttons div.reviews {
+  display: flex;
+  gap: 10px;
+  color: #A7AA37;
+  padding: 10px 30px;
+  transition: .5s;
+}
+
+div.text-alvorecer div.buttons div.reviews:hover {
+  letter-spacing: 3px;
+}
+
+
+@media (max-width: 1024px) {
+  section.second .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  section.second .icons h2 {
+    width: 700px;
+    font-family: "Ibarra Real Nova";
+    font-size: 50px;
+    text-align: center;
+    color: #A7AA37;
+  }
+  
+  section.second .icons div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #A7AA37;
+    border-radius: 50%;
+    transition: .5s;
+  }
+  
+  section.second .icons div:hover {
+    transform: translateY(-10px);
+  }
+  
+  section.second .icons p {
+    font-family: "Lexend Exa";
+    color: #A7AA37;
+    font-size: 30px;
+  }
+  
+  /* --------------------------------------------- */
+  
+  div.alvorecer-dourado {
+    margin: 30px 30px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  div.text-alvorecer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 502px;
+    font-family: "Lexend Exa";
+  }
+  
+  div.text-alvorecer h2 {
+    font-family: "Ibarra Real Nova";
+    font-size: 60px;
+    font-weight: 800;
+  }
+  
+  div.text-alvorecer h3 {
+    color: #A7AA37;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
+  }
+  
+  div.text-alvorecer p {
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  div.text-alvorecer div.buttons {
+    display: flex;
+    gap: 40px;
+  }
+  
+  div.text-alvorecer div.buttons div.buy {
+    display: flex;
+    gap: 10px;
+    background-color: #A7AA37;
+    color: #fff;
+    padding: 10px 30px;
+    transition: .5s;
+  }
+  
+  div.text-alvorecer div.buttons .buy:hover {
+    background-color: #fff;
+    color: #A7AA37;
+    border: 1px solid #A7AA37;
+  }
+  
+  div.text-alvorecer div.buttons div.reviews {
+    display: flex;
+    gap: 10px;
+    color: #A7AA37;
+    padding: 10px 30px;
+    transition: .5s;
+  }
+  
+  div.text-alvorecer div.buttons div.reviews:hover {
+    letter-spacing: 3px;
+  }    
+}
+
+@media (max-width: 768px) {
+  section.second .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  section.second .icons h2 {
+    width: 450px;
+    font-family: "Ibarra Real Nova";
+    font-size: 40px;
+    text-align: center;
+    color: #A7AA37;
+  }
+  
+  section.second .icons div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #A7AA37;
+    border-radius: 50%;
+    transition: .5s;
+  }
+  
+  section.second .icons div:hover {
+    transform: translateY(-10px);
+  }
+  
+  section.second .icons p {
+    font-family: "Lexend Exa";
+    color: #A7AA37;
+    font-size: 30px;
+  }
+  
+  /* --------------------------------------------- */
+  
+  div.alvorecer-dourado {
+    margin: 30px 30px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  div.text-alvorecer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    font-family: "Lexend Exa";
+  }
+  
+  div.text-alvorecer h2 {
+    font-family: "Ibarra Real Nova";
+    font-size: 50px;
+    font-weight: 800;
+  }
+  
+  div.text-alvorecer h3 {
+    color: #A7AA37;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
+  }
+  
+  div.text-alvorecer p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  div.text-alvorecer div.buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  div.text-alvorecer div.buttons div.buy {
+    display: flex;
+    gap: 10px;
+    background-color: #A7AA37;
+    color: #fff;
+    padding: 10px 30px;
+    transition: .5s;
+  }
+  
+  div.text-alvorecer div.buttons .buy:hover {
+    background-color: #fff;
+    color: #A7AA37;
+    border: 1px solid #A7AA37;
+  }
+  
+  div.text-alvorecer div.buttons div.reviews {
+    display: flex;
+    gap: 10px;
+    color: #A7AA37;
+    padding: 10px 30px;
+    transition: .5s;
+  }
+  
+  div.text-alvorecer div.buttons div.reviews:hover {
+    letter-spacing: 3px;
+  }
+}
 
 
 
