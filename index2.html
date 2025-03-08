@@ -54,56 +54,54 @@
     </style>
   </head>
   <body class="m-0 p-0 box-border">
-    <header>
-      <nav class="flex justify-around items-center font-[Lexend_Exa] bg-[#0f0510] h-[15vh]">
-        <a
-          href="/"
-          class="text-[24px] uppercase tracking-[4px] transition-transform duration-300 hover:scale-110"
-        >
-          W<span class="text-[30px] text-[#56070C]">W</span>W
-        </a>
-        <div class="mobile-menu block lg:hidden cursor-pointer">
-          <div class="w-8 h-[2px] bg-white m-2 transition duration-300"></div>
-          <div class="w-8 h-[2px] bg-white m-2 transition duration-300"></div>
-          <div class="w-8 h-[2px] bg-white m-2 transition duration-300"></div>
-        </div>
-        <ul class="nav-list hidden lg:flex list-none">
-          <li class="relative tracking-[3px] ml-[50px]">
-            <a href="#colecao" class="transition duration-300">coleções</a>
-          </li>
-          <li class="relative tracking-[3px] ml-[50px]">
-            <a href="#footer" class="transition duration-300">contato</a>
-          </li>
-          <li class="relative tracking-[3px] ml-[50px]">
-            <a href="#saibamais" class="transition duration-300">saiba mais</a>
-          </li>
-          <li class="relative tracking-[3px] ml-[50px]">
-            <a href="/" class="transition duration-300">comprar</a>
-          </li>
-        </ul>
-      </nav>
+    <body class="bg-[#0f0510] text-white">
 
-      <div
-        class="main-header bg-cover bg-center bg-no-repeat bg-fixed h-[85vh] pl-8"
-        style="background-image: url('../images/bg3.jpg')"
-      >
-        <div class="pt-[100px] font-[Lexend_Exa] text-white w-full max-w-[50vw]">
-          <h1 class="text-white text-[min(50px,5.5vw)] font-medium">
+      <!-- Navbar -->
+      <header class="bg-[#0f0510] h-20 flex items-center justify-between px-10">
+        <a href="/" class="text-2xl font-bold uppercase tracking-wider text-[#E9D0D3]">
+          W<span class="text-[#56070C] text-3xl">W</span>W
+        </a>
+    
+        <nav class="hidden md:flex space-x-10">
+          <a href="#colecao" class="hover:text-[#56070C] transition text-[#E9D0D3]">Coleções</a>
+          <a href="#footer" class="hover:text-[#56070C] transition text-[#E9D0D3]">Contato</a>
+          <a href="#saibamais" class="hover:text-[#56070C] transition text-[#E9D0D3]">Saiba Mais</a>
+          <a href="/" class="hover:text-[#56070C] transition text-[#E9D0D3]">Comprar</a>
+        </nav>
+    
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white text-2xl">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </header>
+    
+      <!-- Hero Section -->
+      <section class="h-[100vh] flex items-center justify-center bg-cover bg-center" 
+               style="background-image: url('images/bg3.jpg'); filter: brightness(60%);">
+        <div class="text-center px-10 md:max-w-3xl lg:max-w-4xl xl:max-w-5xl">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#E9D0D3]">
             Bem-Vindos a World <span class="text-[#56070C]">Wines</span> Web
           </h1>
-          <p class="text-justify text-[min(18px,3vw)] mt-2 mb-8">
-            Encontre na nossa adega online vinhos que transformam qualquer instante em algo
-            único. Cada garrafa é uma história esperando para ser compartilhada, entregue com todo o
-            carinho até sua porta.
+          <p class="mt-4 text-base md:text-lg lg:text-xl xl:text-2xl text-justify text-[#E9D0D3]">
+            Encontre na nossa adega online vinhos que transformam qualquer instante em algo único.
+            Cada garrafa é uma história esperando para ser compartilhada, entregue com todo o carinho até sua porta.
           </p>
-          <button
-            class="text-white bg-[#56070C] font-[Lexend_Exa] text-center w-[260px] h-[40px] border-0 transition duration-500 hover:bg-transparent hover:border-2 hover:border-[#56070C]"
-          >
+          <button class="mt-6 px-6 py-2 bg-[#56070C] hover:bg-transparent border-2 border-[#56070C] transition text-[#E9D0D3]">
             Conheça mais sobre nós
           </button>
         </div>
-      </div>
-    </header>
+      </section>
+    
+      <!-- Scripts -->
+      <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+          alert("Menu mobile será implementado!");
+        });
+      </script>
+    
+    </body>
+    
 
     <main class="mt-24">
       <div id="colecao" class="zeroone">
@@ -183,7 +181,7 @@
           02
         </h2>
       </div>
-
+      
       <section
         class="sophistication grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-items-center my-12 px-5"
       >
@@ -194,15 +192,15 @@
             class="w-full max-w-[400px] h-auto transition duration-500"
           />
         </div>
-        <div class="text-sophistication w-full max-w-[400px] text-left">
+        <div class="text-sophistication w-full max-w-[400px] text-center md:text-left">
           <h2
-            class="font-[Ibarra_Real_Nova] text-[#310729]"
+            class="font-[Ibarra_Real_Nova] text-[#310729] mx-auto"
             style="font-size: clamp(30px, 5vw, 50px);"
           >
             Sofisticação
           </h2>
           <p
-            class="font-[Lexend_Exa] leading-7 text-[#310729] mt-2 mb-4"
+            class="font-[Lexend_Exa] leading-7 text-[#310729] mt-2 mb-4 mx-auto"
             style="font-size: clamp(14px, 2vw, 18px);"
           >
             A sofisticação do vinho vai além de seu sabor, envolvendo uma complexa harmonia entre aromas,
@@ -212,22 +210,89 @@
             vinho se torna não apenas uma bebida, mas uma verdadeira obra de arte que envolve história,
             cultura e paixão.
           </p>
-          <ul>
+          <ul class="text-center md:text-left">
             <li>
               <a
                 href="#"
-                class="relative font-[Lexend_Exa] mt-5 text-[#310729] transition duration-300"
-                style="font-size: clamp(14px, 2vw, 18px);"
-                >Veja todas coleções</a
+                class="relative font-[Lexend_Exa] mt-5 text-[#fff] bg-[#56070C] transition duration-300 py-2 px-4 border-2 border-[#56070C] rounded-lg hover:bg-transparent hover:text-[#56070C] text-[clamp(14px, 2vw, 18px)]"
               >
+                Veja todas coleções
+              </a>
             </li>
           </ul>
         </div>
       </section>
-
+      
       <div class="center-line flex items-center justify-center mb-24">
         <div class="h-[100px] w-[1px] bg-[#56070C]"></div>
       </div>
+      
+      <div class="zerothree">
+        <h2
+          class="text-[150px] font-[Ibarra_Real_Nova] tracking-[16px] text-center"
+          style="-webkit-text-stroke: 1px #56070C; color: transparent;"
+        >
+          03
+        </h2>
+
+
+<!-- Seção Qualidade -->
+<section class="bg-cover bg-center bg-no-repeat bg-fixed text-[#310729] font-['Lexend_Exa'] py-16 px-12" style="background-image: url('../images/bg-quality.jpg');">
+  <div class="text-center mb-10 mt-[-50px]"> <!-- Adicionei mt-[-50px] para subir o conteúdo -->
+    <h2 class="text-[50px] font-['Ibarra_Real_Nova'] mb-4 text-[#56070C]">Qualidade</h2> <!-- Cor roxa escura -->
+    <p class="text-[clamp(14px,2vw,18px)] max-w-2xl mx-auto text-[#56070C]"> <!-- Cor roxa escura -->
+      Na WWW, a qualidade é nosso compromisso, desde o plantio até a venda. Vinhos selecionados para paladares exigentes, proporcionando experiências inesquecíveis.
+    </p>
+  </div>
+
+  <!-- Link com destaque -->
+  <div class="text-center mt-8">
+    <a href="#" class="inline-block bg-[#56070C] text-white px-6 py-2 rounded-md text-lg font-['Lexend_Exa'] transition duration-300 hover:bg-transparent hover:text-[#56070C] hover:border-2 hover:border-[#56070C]">
+      Veja todas coleções
+    </a>
+  </div>
+</section>
+
+  <!-- Processo -->
+  <div class="flex flex-wrap gap-10 justify-center">
+    <!-- Plantio -->
+    <div class="w-[270px] h-[350px] bg-[#0f0510] rounded-xl text-white text-center p-8 shadow-lg transition-transform transform hover:translate-y-[-10px]">
+      <img src="images/plantio.png" alt="" class="w-[80px] mx-auto mb-4">
+      <h3 class="text-xl mb-2">Plantio</h3>
+      <p class="text-[#E1D9D9] mb-6">Plantio da uva exige solo, clima, cuidado, poda, irrigação e paciência.</p>
+      <button class="w-[150px] h-[40px] bg-[#56070C] text-white font-['Lexend_Exa'] border-none shadow-lg hover:bg-[#0f0510] hover:border-3 hover:border-[#56070C] transition duration-500">Saiba Mais</button>
+    </div>
+
+    <!-- Colheita -->
+    <div class="w-[270px] h-[350px] bg-[#0f0510] rounded-xl text-white text-center p-8 shadow-lg transition-transform transform hover:translate-y-[-10px]">
+      <img src="images/colheita.png" alt="" class="w-[80px] mx-auto mb-4">
+      <h3 class="text-xl mb-2">Colheita</h3>
+      <p class="text-[#E1D9D9] mb-6">Cada uva colhida conta uma história de tradição, paixão e tempo.</p>
+      <button class="w-[150px] h-[40px] bg-[#56070C] text-white font-['Lexend_Exa'] border-none shadow-lg hover:bg-[#0f0510] hover:border-3 hover:border-[#56070C] transition duration-500">Saiba Mais</button>
+    </div>
+
+    <!-- Produção -->
+    <div class="w-[270px] h-[350px] bg-[#0f0510] rounded-xl text-white text-center p-8 shadow-lg transition-transform transform hover:translate-y-[-10px]">
+      <img src="images/esmagamento.png" alt="" class="w-[80px] mx-auto mb-4">
+      <h3 class="text-xl mb-2">Produção</h3>
+      <p class="text-[#E1D9D9] mb-6">Da uva ao vinho, arte e tradição moldam cada preciosa gota.</p>
+      <button class="w-[150px] h-[40px] bg-[#56070C] text-white font-['Lexend_Exa'] border-none shadow-lg hover:bg-[#0f0510] hover:border-3 hover:border-[#56070C] transition duration-500">Saiba Mais</button>
+    </div>
+
+    <!-- Venda -->
+    <div class="w-[270px] h-[350px] bg-[#0f0510] rounded-xl text-white text-center p-8 shadow-lg transition-transform transform hover:translate-y-[-10px]">
+      <img src="images/compras.png" alt="" class="w-[80px] mx-auto mb-4">
+      <h3 class="text-xl mb-2">Venda</h3>
+      <p class="text-[#E1D9D9] mb-6">Cada garrafa vendida leva consigo sabor, história e paixão pelo vinho.</p>
+      <button class="w-[150px] h-[40px] bg-[#56070C] text-white font-['Lexend_Exa'] border-none shadow-lg hover:bg-[#0f0510] hover:border-3 hover:border-[#56070C] transition duration-500">Saiba Mais</button>
+    </div>
+  </div>
+</section>
+
+<!-- Linha de separação -->
+<div class="flex justify-center mt-20">
+  <div class="h-[100px] w-[1px] bg-[#56070C]"></div>
+</div>
 
       <div id="saibamais" class="zerofour">
         <h2
@@ -305,43 +370,45 @@
           W<span class="text-[65px]">W</span>W
         </p>
       </div>
+      
       <div class="address mb-12">
         <h2 class="text-[36px] font-light font-[Ibarra_Real_Nova] text-center">
           <a
             href="https://maps.app.goo.gl/5vTvN2RrRdFYV9CB7"
             target="_blank"
             class="text-white transition duration-500 hover:text-[#56070C]"
-            >Av. Primeiro de Maio, 720 - Jaguaribe</a
           >
+            Av. Primeiro de Maio, 720 - Jaguaribe
+          </a>
         </h2>
       </div>
-      <div class="social-media w-full flex justify-around px-2">
-        <div class="contacts flex justify-center items-center gap-10">
+      
+      <div class="social-media w-full flex flex-col sm:flex-row justify-around px-2">
+        <div class="contacts flex justify-center items-center gap-10 mb-8 sm:mb-0">
           <p class="text-[18px] font-[Lexend_Exa] text-white">Contatos</p>
-          <a href="#">
-            <i
-              class="fa-brands fa-linkedin text-white text-[35px] transition duration-300 hover:scale-125"
-            ></i>
+          <a href="#" class="text-white text-[35px] transition duration-300 hover:scale-125">
+            <i class="fa-brands fa-linkedin"></i>
           </a>
-          <a href="#">
-            <i
-              class="fa-brands fa-github text-white text-[35px] transition duration-300 hover:scale-125"
-            ></i>
+          <a href="#" class="text-white text-[35px] transition duration-300 hover:scale-125">
+            <i class="fa-brands fa-github"></i>
           </a>
         </div>
-        <div class="policies flex items-center gap-5">
+        <div class="policies flex items-center gap-5 flex-wrap justify-center sm:justify-end">
           <p class="font-[Lexend_Exa] font-light text-white">
-            <a href="#" class="transition duration-500 hover:opacity-70"
-              >política de privacidade</a
-            >
+            <a href="#" class="transition duration-500 hover:opacity-70">
+              política de privacidade
+            </a>
           </p>
           <p class="font-[Lexend_Exa] font-light text-white">
-            <a href="#" class="transition duration-500 hover:opacity-70">termos &amp; serviços</a>
+            <a href="#" class="transition duration-500 hover:opacity-70">
+              termos &amp; serviços
+            </a>
           </p>
           <p class="font-[Lexend_Exa] font-light text-white">2025&copy;WWW</p>
         </div>
       </div>
     </footer>
+    
 
     <script src="js/mobile-navbar.js"></script>
   </body>
