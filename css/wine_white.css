@@ -173,16 +173,28 @@ nav {
   margin-bottom: 20px;
 }
 
+@media (max-width: 640px) {
+  .main-header p {
+    font-size: 0.9rem;
+    font-family: "Lexend Exa";
+    width: 450px;
+    font-weight: 400;
+    text-align: center;
+    color: #A7AA37;
+    margin-bottom: 20px;
+  }
+}
+
 /*  ---------------------------------------------- */
 
 
-div.icons {
+section.first div.icons {
   display: flex;
   justify-content: space-around;
   padding: 0px 100px;
 }
 
-div.icons div {
+section.first div.icons div {
   width: 180px;
   height: 180px;
   display: flex;
@@ -198,15 +210,15 @@ div.icons div {
   transition: .5s;
 }
 
-div.icons div:hover {
+section.first div.icons div:hover {
   transform: translateY(-10px);
 }
 
-div.icons div span {
+section.first div.icons div span {
   font-size: 50px;
 }
 
-div.brisa-dourada {
+div.brisadovale {
   margin: 0px 30px;
   display: flex;
   justify-content: end;
@@ -304,7 +316,7 @@ div.text-brisa div.buttons div.reviews:hover {
     font-size: 50px;
   }
 
-  div.brisa-dourada {
+  div.brisadovale {
     margin: 0px 30px;
     display: flex;
     flex-direction: column;
@@ -476,6 +488,14 @@ div.text-brisa div.buttons div.reviews:hover {
   div.text-brisa div.buttons div.reviews:hover {
     letter-spacing: 3px;
   }  
+}
+
+/* --------------------------------------------- */
+
+section.second .icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
