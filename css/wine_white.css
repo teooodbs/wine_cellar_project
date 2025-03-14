@@ -1033,6 +1033,39 @@ div.text-regia div.buttons div.reviews:hover {
   }  
 }
 
+/* --------------------------------------------- */
 
+footer {
+  background-color: #2e1f1f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
 
+.top-text {
+  font-family: "Lexend Exa";
+  margin-bottom: 10px;
+}
 
+.red-text {
+  font-size: 100px;
+  font-family: "Ibarra Real Nova";
+  color: #a53b46;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #a53b46;
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-family: "Lexend Exa";
+}
