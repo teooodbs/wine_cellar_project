@@ -12,12 +12,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Google Fonts -->
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400;1,700&family=Lexend+Exa:wght@100;900&display=swap"
       rel="stylesheet"
     />
-    
     <script src="https://cdn.tailwindcss.com"></script>
     
     <style>
@@ -78,12 +77,12 @@
     
       
       <section class="h-[100vh] flex items-center justify-center bg-cover bg-center" 
-               style="background-image: url('images/bg3.jpg'); filter: brightness(60%);">
+               style="background-image: url('images/bg3.jpg'); filter: brightness(100%);">
         <div class="text-center px-10 md:max-w-3xl lg:max-w-4xl xl:max-w-5xl">
           <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#E9D0D3]">
             Bem-Vindos a World <span class="text-[#56070C]">Wines</span> Web
           </h1>
-          <p class="mt-4 text-base md:text-lg lg:text-xl xl:text-2xl text-justify text-[#E9D0D3]">
+          <p class="mt-4 text-base md:text-lg lg:text-xl xl:text-2xl text-center text-[#E9D0D3]">
             Encontre na nossa adega online vinhos que transformam qualquer instante em algo único.
             Cada garrafa é uma história esperando para ser compartilhada, entregue com todo o carinho até sua porta.
           </p>
@@ -129,7 +128,7 @@
             transformar qualquer ocasião em algo memorável.
           </p>
           <button
-            class="text-white bg-[#56070C] font-[Lexend_Exa] text-center w-[150px] h-[40px] border-0"
+            class="text-white bg-[#56070C] font-[Lexend_Exa] text-center w-[150px] h-[40px] border-0transition duration-300 py-2 px-4 border-2 border-[#56070C] rounded-lg hover:bg-transparent hover:text-[#56070C] text-[clamp(14px, 2vw, 18px)]"
           >
             Ver Coleções
           </button>
@@ -213,9 +212,10 @@
             <li>
               <a
                 href="#"
-                class="relative font-[Lexend_Exa] mt-5 text-[#fff] bg-[#56070C] transition duration-300 py-2 px-4 border-2 border-[#56070C] rounded-lg hover:bg-transparent hover:text-[#56070C] text-[clamp(14px, 2vw, 18px)]"
+                class="relative font-[Lexend_Exa] mt-5 text-[#310729] transition duration-300 font-semibold"
+                style="font-size: clamp(14px, 2vw, 18px);"
               >
-                Veja todas coleções
+              •Veja todas coleções
               </a>
             </li>
           </ul>
@@ -226,71 +226,88 @@
         <div class="h-[100px] w-[1px] bg-[#56070C]"></div>
       </div>
       
-      <div class="zerothree">
-        <h2
-          class="text-[150px] font-[Ibarra_Real_Nova] tracking-[16px] text-center"
-          style="-webkit-text-stroke: 1px #56070C; color: transparent;"
-        >
-          03
-        </h2>
+      
+<div class="relative w-full min-h-screen bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url('images/bg-quality.jpg');">
+  
+  <!-- Número "03" -->
 
-
-<!-- Seção Qualidade -->
-<section class="bg-cover bg-center bg-no-repeat bg-fixed text-[#310729] font-['Lexend_Exa'] py-16 px-12" style="background-image: url('../images/bg-quality.jpg');">
-  <div class="text-center mb-10 mt-[-50px]"> 
-    <h2 class="text-[50px] font-['Ibarra_Real_Nova'] mb-10 text-[#56070C] tracking-[16px] text-center">
-      Qualidade
-    </h2> 
-    <p class="text-[clamp(18px,10vw,20px)] max-w-2xl mx-auto text-[#310729] font-['none']">
-
-      Na WWW, a qualidade é nosso compromisso, desde o plantio até a venda. Vinhos selecionados para paladares exigentes, proporcionando experiências inesquecíveis.
-
-    </p>
+  <div class="text-center pt-16">
+    <h2 class="text-[150px] font-[Ibarra_Real_Nova] tracking-[16px]" style="-webkit-text-stroke: 1px #56070C; color: transparent;">
+      03
+    </h2>
   </div>
 
-  <div class="text-center mt-8">
-    <a href="#" class="inline-block bg-[#56070C] text-white px-6 py-2 rounded-md text-lg font-['Lexend_Exa'] transition duration-300 hover:bg-transparent hover:text-[#56070C] hover:border-2 hover:border-[#56070C]">
-      Veja todas coleções
-    </a>
-  </div>
-</section>
+  <!-- Seção Qualidade -->
 
+  <section class="text-[#310729] font-['Lexend_Exa'] py-16 px-12">
+    <div class="text-center mb-10">
+      <h2 class="text-[50px] font-['Ibarra_Real_Nova'] mb-10 text-[#56070C] tracking-[16px]">
+        Qualidade
+      </h2> 
+      <p class="text-[clamp(20px,15vw,23px)] max-w-2xl mx-auto text-[#310729] font-['none']">
+        Na WWW, a qualidade é nosso compromisso, desde o plantio até a venda. Vinhos selecionados para paladares exigentes, proporcionando experiências inesquecíveis.
+      </p>
+    </div>
 
-<div class="flex flex-wrap gap-10 justify-center">
-  <!-- Plantio -->
-  <div class="w-[270px] h-[350px] bg-[#0f0510] rounded-xl text-white text-center p-8 shadow-lg transition-transform transform hover:translate-y-[-10px]">
-    <img src="images/plantio.png" alt="" class="w-[80px] mx-auto mb-4">
-    <h3 class="text-xl mb-2">Plantio</h3>
-    <p class="text-[#E1D9D9] mb-6">Plantio da uva exige solo, clima, cuidado, poda, irrigação e paciência.</p>
-    <button class="w-[150px] h-[40px] bg-[#56070C] text-white font-['Lexend_Exa'] border-none shadow-lg hover:bg-[#0f0510] hover:border-3 hover:border-[#56070C] transition duration-500">Saiba Mais</button>
-  </div>
+    <div class="text-center mt-8">
+      <a href="#" class="inline-block bg-[#56070C] text-white px-4 py-2 rounded-md text-lg font-['Lexend_Exa'] transition duration-300 hover:bg-transparent hover:text-[#56070C] hover:border-2 hover:border-[#56070C]">
+        Veja todas coleções
+      </a>
+    </div>
+  </section>
 
-  <!-- Colheita -->
-  <div class="w-[270px] h-[350px] bg-[#0f0510] rounded-xl text-white text-center p-8 shadow-lg transition-transform transform hover:translate-y-[-10px]">
-    <img src="images/colheita.png" alt="" class="w-[80px] mx-auto mb-4">
-    <h3 class="text-xl mb-2">Colheita</h3>
-    <p class="text-[#E1D9D9] mb-6">Cada uva colhida conta uma história de tradição, paixão e tempo.</p>
-    <button class="w-[150px] h-[40px] bg-[#56070C] text-white font-['Lexend_Exa'] border-none shadow-lg hover:bg-[#0f0510] hover:border-3 hover:border-[#56070C] transition duration-500">Saiba Mais</button>
-  </div>
+ 
+  <div class="flex flex-wrap gap-10 justify-center pb-16">
 
-  <!-- Produção -->
-  <div class="w-[270px] h-[350px] bg-[#0f0510] rounded-xl text-white text-center p-8 shadow-lg transition-transform transform hover:translate-y-[-10px]">
-    <img src="images/esmagamento.png" alt="" class="w-[80px] mx-auto mb-4">
-    <h3 class="text-xl mb-2">Produção</h3>
-    <p class="text-[#E1D9D9] mb-6">Da uva ao vinho, arte e tradição moldam cada preciosa gota.</p>
-    <button class="w-[150px] h-[40px] bg-[#56070C] text-white font-['Lexend_Exa'] border-none shadow-lg hover:bg-[#0f0510] hover:border-3 hover:border-[#56070C] transition duration-500">Saiba Mais</button>
-  </div>
+    <!-- Plantio -->
 
-  <!-- Venda -->
-  <div class="w-[270px] h-[350px] bg-[#0f0510] rounded-xl text-white text-center p-8 shadow-lg transition-transform transform hover:translate-y-[-10px]">
-    <img src="images/compras.png" alt="" class="w-[80px] mx-auto mb-4">
-    <h3 class="text-xl mb-2">Venda</h3>
-    <p class="text-[#E1D9D9] mb-6">Cada garrafa vendida leva consigo sabor, história e paixão pelo vinho.</p>
-    <button class="w-[150px] h-[40px] bg-[#56070C] text-white font-['Lexend_Exa'] border-none shadow-lg hover:bg-[#0f0510] hover:border-3 hover:border-[#56070C] transition duration-500">Saiba Mais</button>
+    <div class="w-[270px] h-[350px] bg-[#0f0510] rounded-xl text-white text-center p-8 shadow-lg transition-transform transform hover:translate-y-[-10px]">
+      <img src="images/plantio.png" alt="" class="w-[80px] mx-auto mb-4">
+      <h3 class="text-xl mb-2">Plantio</h3>
+      <p class="text-[#E1D9D9] mb-6">Plantio da uva exige solo, clima, cuidado, poda, irrigação e paciência.</p>
+      <button class="w-[150px] h-[40px] bg-[#56070C] text-white border-none shadow-lg hover:bg-[#0f0510] hover:border-3 hover:border-[#56070C] transition duration-500">
+        Saiba Mais
+      </button>
+    </div>
+
+    <!-- Colheita -->
+
+    <div class="w-[270px] h-[350px] bg-[#0f0510] rounded-xl text-white text-center p-8 shadow-lg transition-transform transform hover:translate-y-[-10px]">
+      <img src="images/colheita.png" alt="" class="w-[80px] mx-auto mb-4">
+      <h3 class="text-xl mb-2">Colheita</h3>
+      <p class="text-[#E1D9D9] mb-6">Cada uva colhida conta uma história de tradição, paixão e tempo.</p>
+      <button class="w-[150px] h-[40px] bg-[#56070C] text-white border-none shadow-lg hover:bg-[#0f0510] hover:border-3 hover:border-[#56070C] transition duration-500">
+        Saiba Mais
+      </button>
+    </div>
+
+    <!-- Produção -->
+
+    <div class="w-[270px] h-[350px] bg-[#0f0510] rounded-xl text-white text-center p-8 shadow-lg transition-transform transform hover:translate-y-[-10px]">
+      <img src="images/esmagamento.png" alt="" class="w-[80px] mx-auto mb-4">
+      <h3 class="text-xl mb-2">Produção</h3>
+      <p class="text-[#E1D9D9] mb-6">Da uva ao vinho, arte e tradição moldam cada preciosa gota.</p>
+      <button class="w-[150px] h-[40px] bg-[#56070C] text-white border-none shadow-lg hover:bg-[#0f0510] hover:border-3 hover:border-[#56070C] transition duration-500">
+        Saiba Mais
+      </button>
+    </div>
+
+    <!-- Venda -->
+
+    <div class="w-[270px] h-[350px] bg-[#0f0510] rounded-xl text-white text-center p-8 shadow-lg transition-transform transform hover:translate-y-[-10px]">
+      <img src="images/compras.png" alt="" class="w-[80px] mx-auto mb-4">
+      <h3 class="text-xl mb-2">Venda</h3>
+      <p class="text-[#E1D9D9] mb-6">Cada garrafa vendida leva consigo sabor, história e paixão pelo vinho.</p>
+      <button class="w-[150px] h-[40px] bg-[#56070C] text-white border-none shadow-lg hover:bg-[#0f0510] hover:border-3 hover:border-[#56070C] transition duration-500">
+        Saiba Mais
+      </button>
+    </div>
   </div>
 </div>
 
+
 <!-- Linha de separação -->
+ 
 <div class="flex justify-center mt-20">
   <div class="h-[100px] w-[1px] bg-[#56070C]"></div>
 </div>
@@ -333,9 +350,9 @@
             <li>
               <a
                 href="/"
-                class="relative font-[Lexend_Exa] mt-5 text-[#310729] transition duration-300"
+                class="relative font-[Lexend_Exa] mt-5 text-[#310729] transition duration-300 font-semibold"
                 style="font-size: clamp(14px, 2vw, 18px);"
-                >Veja a nossa História</a
+                >•Veja a nossa História</a
               >
             </li>
           </ul>
@@ -345,15 +362,16 @@
             <img src="images/cat.jpeg" alt="" class="w-[300px]" />
           </div>
           <div
-            class="text-history font-[Lexend_Exa] text-center text-[#310729] max-w-[90%]"
-            style="font-size: clamp(18px, 2vw, 18px);"
+            class="text-history font-[Lexend_Exa] text-center text-[#310729] max-w-[95%]"
+            style="font-size: clamp(20px, 5vw, 19px);"
           >
             <p class="mb-5">
-              Félix, um gato sofisticado, sonhava em abrir sua própria adega e, com esforço e               persuasão, fundou a World Wines Web, um espaço elegante de vinhos raros. Seu faro               apurado e conhecimento conquistaram clientes, incluindo influenciadores e amantes do               vinho.
-            </p>
-            <p class="mb-5">
-              Caminhando entre as prateleiras, ele recomendava safras especiais, provando que um gato               não precisa só de leite—pode ser um verdadeiro sommelier. 🍷🐱
-            </p>
+              Félix, um gato sofisticado, sonhava em abrir sua própria adega e, com esforço e               persuasão, fundou a World Wines Web, um espaço elegante de vinhos raros. Seu faro               apurado e conhecimento conquistaram clientes, incluindo influenciadores e amantes do                  vinho.
+              <p class="mb-4">
+                Caminhando entre as prateleiras, ele recomendava safras especiais, provando que um gato               não precisa só de leite pode ser um verdadeiro sommelier. 🍷🐱
+              </p>
+              
+            
           </div>
         </div>
       </section>
