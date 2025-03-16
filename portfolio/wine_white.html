@@ -158,7 +158,7 @@
     </section>
 
     <section class="third">
-      <div class="flex flex-col justify-center items-center gap-[20px] mx-[30px] mb-[100px] mt-0 lg:flex-row lg:justify-center lg:items-center lg:gap-[60px] lg:mx-[60px] lg:my-[60px] lg:mb-[200px]">
+      <div class="flex flex-col justify-center items-center gap-[20px] mx-[30px] mb-[100px] mt-0 lg:flex-row lg:justify-center lg:items-center lg:gap-[60px] lg:mx-[60px] lg:my-[60px] lg:mb-[100px]">
         <div class="img-regia order-1 lg:order-none">
           <img src="../images/img_page_white3-removebg-preview.png" alt="">
         </div>
@@ -184,18 +184,85 @@
         </div>
       </div>
     </section>
+    <div class="w-full max-w-6xl mx-auto md:mt-0 mt-12 mb-24 px-4 flex items-center justify-center">
+      <div class="w-full lg:w-910px md:w-700px sm:w-450px mx-auto p-12 bg-white rounded-3xl shadow-lg">
+        <h2 class="font-ibarra text-4xl md:text-3xl sm:text-2xl">Formulário de Recomendação Personalizada</h2>
+        <p class="font-lexend sm:text-sm">Preencha os campos abaixo para receber recomendações personalizadas de vinhos por e-mail.</p>
+        
+        <form action="#" method="POST">
+          <div class="mt-10">
+            <label for="nome" class="font-lexend sm:text-sm">Nome</label>
+            <div>
+              <input type="text" id="nome" name="nome" required 
+                   class="w-full p-2 border border-gray-300 rounded mt-1">
+            </div>
+          </div>
+          
+          <div class="mt-10 mb-20">
+            <label for="email" class="font-lexend sm:text-sm">E-mail</label>
+            <div>
+              <input type="email" id="email" name="email" required 
+                   class="w-full p-2 border border-gray-300 rounded mt-1">
+            </div>
+          </div>
+          
+          <div class="mb-20">
+            <span class="font-lexend sm:text-sm">Prefere vinhos doces ou secos?</span>
+            <div class="mt-10 radio-custom">
+              <div>
+                <input type="radio" id="doce" name="tipo_vinho" value="doce" class="mr-2">
+                <label for="doce" class="font-lexend sm:text-sm">Doces</label>
+              </div>
+              <div>
+                <input type="radio" id="seco" name="tipo_vinho" value="seco" class="mr-2">
+                <label for="seco" class="font-lexend sm:text-sm">Secos</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mb-20">
+            <span class="font-lexend sm:text-sm">Gosta de acidez mais presente ou equilibrada?</span>
+            <div class="mt-10 radio-custom">
+              <div>
+                <input type="radio" id="presente" name="acidez" value="presente" class="mr-2">
+                <label for="presente" class="font-lexend sm:text-sm">Mais presente</label>
+              </div>
+              <div>
+                <input type="radio" id="equilibrada" name="acidez" value="equilibrada" class="mr-2">
+                <label for="equilibrada" class="font-lexend sm:text-sm">Equilibrada</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mb-20">
+            <label for="vinho_favorito" class="font-lexend sm:text-sm">Algum vinho branco favorito atual?</label>
+            <div>
+              <input type="text" id="vinho_favorito" name="vinho_favorito" 
+                   class="w-full p-2 border border-gray-300 rounded mt-1">
+            </div>
+          </div>
+          
+          <div>
+            <button type="submit" 
+                  class="font-lexend bg-[#A7AA37] hover:bg-[#888b2c] text-white py-2 px-5 border-none cursor-pointer transition duration-500">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
   </main>
   <footer class="h-screen bg-[#2e1f1f] text-white flex flex-col items-center pt-24 pb-5 relative z-10">
     <div class="font-['Lexend_Exa'] mb-[-40px]">Próxima Família</div>
     <a href="../index.html" class="group relative flex items-center justify-between text-white no-underline px-10 py-5 uppercase tracking-wider text-sm font-['Lexend_Exa'] absolute bottom-[-390px] z-20 overflow-hidden">
       <span class="relative z-10">Saiba Mais</span>
-      <span class="absolute inset-0 bg-[#a53b46] transition-all duration-300 ease-in-out"></span>
+      <span class="absolute inset-0 bg-[#6d282f] transition-all duration-300 ease-in-out"></span>
       <span class="absolute inset-0 bg-[#9e5159] transform translate-x-full transition-all duration-300 ease-in-out group-hover:translate-x-0"></span>
     </a>
     <div class="wine-image relative z-10">
       <img width="125px" src="../images/wine-tinto-copy.png" alt="Calem Porto Rosé Wine" class="opacity-80">
     </div>
-    <div class="text-[200px] font-['Ibarra_Real_Nova'] font-extrabold text-[#a53b46] absolute top-[80px] z-0">Red</div>
+    <div class="text-[200px] font-['Ibarra_Real_Nova'] font-extrabold text-[#6d282f] absolute top-[80px] z-0">Red</div>
   </footer>
 
   
