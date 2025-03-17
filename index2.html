@@ -20,7 +20,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <style>
-    
+
+      @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Lexend+Exa:wght@100..900&display=swap');
+
       .nav-list li a::before {
         content: '';
         position: absolute;
@@ -50,14 +52,22 @@
       .history .data ul li a:hover::before {
         width: 100%;
       }
+
+      .font-lexend {
+        font-family: 'Lexend Exa', sans-serif;
+      }
+
+      .font-ibarra {
+        font-family: 'Ibarra Real Nova', serif;
+      }
     </style>
   </head>
-  <body class="m-0 p-0 box-border">
+  <body class="m-0 p-0 box-border font-lexend">
     <body class="bg-[#0f0510] text-white">
 
       <!-- Navbar -->
       <header class="bg-[#0f0510] h-20 flex items-center justify-between px-10">
-        <a href="/" class="text-2xl font-bold uppercase tracking-wider text-[#E9D0D3]">
+        <a href="/" class="text-2xl font-bold uppercase tracking-wider text-[#E9D0D3] font-ibarra">
           W<span class="text-[#56070C] text-3xl">W</span>W
         </a>
     
@@ -79,14 +89,14 @@
       <section class="h-[100vh] flex items-center justify-center bg-cover bg-center" 
                style="background-image: url('images/bg3.jpg'); filter: brightness(100%);">
         <div class="text-center px-10 md:max-w-3xl lg:max-w-4xl xl:max-w-5xl">
-          <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#E9D0D3]">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#E9D0D3] font-ibarra">
             Bem-Vindos a World <span class="text-[#56070C]">Wines</span> Web
           </h1>
           <p class="mt-4 text-base md:text-lg lg:text-xl xl:text-2xl text-center text-[#E9D0D3]">
             Encontre na nossa adega online vinhos que transformam qualquer instante em algo único.
             Cada garrafa é uma história esperando para ser compartilhada, entregue com todo o carinho até sua porta.
           </p>
-          <button class="mt-6 px-6 py-2 bg-[#56070C] hover:bg-transparent border-2 border-[#56070C] transition text-[#E9D0D3]">
+          <button class="mt-6 px-[20px] py-[10px] bg-[#56070C] hover:bg-transparent border-2 border-[#56070C] transition text-[#E9D0D3]">
             Conheça mais sobre nós
           </button>
         </div>
@@ -105,7 +115,7 @@
     <main class="mt-24">
       <div id="colecao" class="zeroone">
         <h2
-          class="text-[150px] font-[Ibarra_Real_Nova] tracking-[16px] text-center"
+          class="text-[150px] tracking-[16px] text-center font-ibarra"
           style="-webkit-text-stroke: 1px #56070C; color: transparent;"
         >
           01
@@ -115,7 +125,7 @@
       <section class="colecao">
         <div class="text-colecao grid place-items-center mb-20">
           <h2
-            class="text-[44px] font-[Ibarra_Real_Nova] text-center text-[#310729]"
+            class="text-[44px] text-center text-[#310729] font-ibarra"
           >
             Coleção de vinhos WWW
           </h2>
@@ -128,7 +138,7 @@
             transformar qualquer ocasião em algo memorável.
           </p>
           <button
-            class="text-white bg-[#56070C] font-[Lexend_Exa] text-center w-[150px] h-[40px] border-0transition duration-300 py-2 px-4 border-2 border-[#56070C] rounded-lg hover:bg-transparent hover:text-[#56070C] text-[clamp(14px, 2vw, 18px)]"
+            class="text-white bg-[#56070C] font-lexend text-center px-[20px] py-[10px] border-0transition duration-300 border-2 border-[#56070C] hover:bg-transparent hover:text-[#56070C] text-[clamp(14px, 2vw, 18px)]"
           >
             Ver Coleções
           </button>
@@ -136,6 +146,16 @@
       </section>
 
       <section class="wines grid grid-cols-3 place-items-center mb-24">
+        <div class="wine-white text-center px-1">
+          <a href="portfolio/wine_white.html">
+            <img
+              src="images/wine-white-copy.png"
+              alt="White Wine"
+              class="h-[320px] sm:h-[360px] md:h-[400px] mx-auto transition duration-500 hover:opacity-50"
+            />
+          </a>
+          <p class="text-[40px] sm:text-[45px] md:text-[50px] font-ibarra text-[#A7AA37]">White</p>
+        </div>
         <div class="wine-red text-center px-1">
           <a href="#">
             <img
@@ -144,17 +164,7 @@
               class="h-[320px] sm:h-[360px] md:h-[400px] mx-auto transition duration-500 hover:opacity-50"
             />
           </a>
-          <p class="text-[40px] sm:text-[45px] md:text-[50px] font-[Ibarra_Real_Nova] text-[#8C3A42]">Red</p>
-        </div>
-        <div class="wine-white text-center px-1">
-          <a href="#">
-            <img
-              src="images/wine-white-copy.png"
-              alt="White Wine"
-              class="h-[320px] sm:h-[360px] md:h-[400px] mx-auto transition duration-500 hover:opacity-50"
-            />
-          </a>
-          <p class="text-[40px] sm:text-[45px] md:text-[50px] font-[Ibarra_Real_Nova] text-[#A7AA37]">White</p>
+          <p class="text-[40px] sm:text-[45px] md:text-[50px] font-ibarra text-[#8C3A42]">Red</p>
         </div>
         <div class="wine-rose text-center px-1">
           <a href="#">
@@ -164,7 +174,7 @@
               class="h-[320px] sm:h-[360px] md:h-[400px] mx-auto transition duration-500 hover:opacity-50"
             />
           </a>
-          <p class="text-[40px] sm:text-[45px] md:text-[50px] font-[Ibarra_Real_Nova] text-[#DF587D]">Rosé</p>
+          <p class="text-[40px] sm:text-[45px] md:text-[50px] font-ibarra text-[#DF587D]">Rosé</p>
         </div>
       </section>
       <div class="center-line flex items-center justify-center mb-24">
@@ -173,7 +183,7 @@
 
       <div class="zerotwo">
         <h2
-          class="text-[150px] font-[Ibarra_Real_Nova] tracking-[16px] text-center"
+          class="text-[150px] font-ibarra tracking-[16px] text-center"
           style="-webkit-text-stroke: 1px #56070C; color: transparent;"
         >
           02
@@ -192,13 +202,13 @@
         </div>
         <div class="text-sophistication w-full max-w-[400px] text-center md:text-left">
           <h2
-            class="font-[Ibarra_Real_Nova] text-[#310729] mx-auto"
+            class="font-ibarra text-[#310729] mx-auto"
             style="font-size: clamp(30px, 5vw, 50px);"
           >
             Sofisticação
           </h2>
           <p
-            class="font-[Lexend_Exa] leading-7 text-[#310729] mt-2 mb-4 mx-auto"
+            class="leading-7 text-[#310729] mt-2 mb-4 mx-auto"
             style="font-size: clamp(20px, 2vw, 20px);"
           >
             A sofisticação do vinho vai além de seu sabor, envolvendo uma complexa harmonia entre aromas,
@@ -212,10 +222,10 @@
             <li>
               <a
                 href="#"
-                class="relative font-[Lexend_Exa] mt-5 text-[#310729] transition duration-300 font-semibold"
+                class="relative mt-5 text-[#310729] transition duration-300 font-semibold"
                 style="font-size: clamp(14px, 2vw, 18px);"
               >
-              •Veja todas coleções
+              • Veja todas coleções
               </a>
             </li>
           </ul>
@@ -232,25 +242,25 @@
   <!-- Número "03" -->
 
   <div class="text-center pt-16">
-    <h2 class="text-[150px] font-[Ibarra_Real_Nova] tracking-[16px]" style="-webkit-text-stroke: 1px #56070C; color: transparent;">
+    <h2 class="text-[150px] font-ibarra tracking-[16px]" style="-webkit-text-stroke: 1px #56070C; color: transparent;">
       03
     </h2>
   </div>
 
   <!-- Seção Qualidade -->
 
-  <section class="text-[#310729] font-['Lexend_Exa'] py-16 px-12">
+  <section class="text-[#310729] py-16 px-12">
     <div class="text-center mb-10">
-      <h2 class="text-[50px] font-['Ibarra_Real_Nova'] mb-10 text-[#56070C] tracking-[16px]">
+      <h2 class="text-[50px] font-ibarra mb-10 text-[#56070C] tracking-[16px]">
         Qualidade
       </h2> 
-      <p class="text-[clamp(20px,15vw,23px)] max-w-2xl mx-auto text-[#310729] font-['none']">
+      <p class="text-[clamp(20px,15vw,23px)] max-w-2xl mx-auto text-[#310729] font-lexend">
         Na WWW, a qualidade é nosso compromisso, desde o plantio até a venda. Vinhos selecionados para paladares exigentes, proporcionando experiências inesquecíveis.
       </p>
     </div>
 
     <div class="text-center mt-8">
-      <a href="#" class="inline-block bg-[#56070C] text-white px-4 py-2 rounded-md text-lg font-['Lexend_Exa'] transition duration-300 hover:bg-transparent hover:text-[#56070C] hover:border-2 hover:border-[#56070C]">
+      <a href="#" class="inline-block bg-[#56070C] text-white px-[20px] py-[10px] text-lg transition duration-300 hover:bg-transparent hover:text-[#56070C] hover:border-2 hover:border-[#56070C]">
         Veja todas coleções
       </a>
     </div>
@@ -314,7 +324,7 @@
 
       <div id="saibamais" class="zerofour">
         <h2
-          class="text-[150px] font-[Ibarra_Real_Nova] text-center text-white tracking-[16px]"
+          class="text-[150px] font-ibarra text-center text-white tracking-[16px]"
           style="text-shadow:
             1px 1px 0 #56070C,
             -1px 1px 0 #56070C,
@@ -332,7 +342,7 @@
           <div
             class="title-history font-[Ibarra_Real_Nova] self-center text-center lg:text-right text-[#310729]"
           >
-            <h2 class="text-[min(40px,5vw)] font-medium">
+            <h2 class="text-[min(40px,5vw)] font-medium font-ibarra w-[400px]">
               WWW é vinho. É Brasil. É o mundo dos vinhos ao seu alcance.
             </h2>
           </div>
@@ -341,18 +351,18 @@
           </div>
         </div>
         <div
-          class="data flex flex-col items-center text-center text-[#310729] text-[15px] font-[Ibarra_Real_Nova] mb-8"
+          class="data flex flex-col items-center text-center text-[#310729] text-[15px] mb-8"
         >
-          <h2 class="text-[55px] font-light" style="text-shadow: 0px 5px 10px #31072950;">
+          <h2 class="text-[55px] font-light font-ibarra" style="text-shadow: 0px 5px 10px #31072950;">
             Desde 1991
           </h2>
           <ul>
             <li>
               <a
                 href="/"
-                class="relative font-[Lexend_Exa] mt-5 text-[#310729] transition duration-300 font-semibold"
+                class="relative mt-5 text-[#310729] transition duration-300 font-semibold"
                 style="font-size: clamp(14px, 2vw, 18px);"
-                >•Veja a nossa História</a
+                >• Veja a nossa História</a
               >
             </li>
           </ul>
@@ -363,7 +373,7 @@
           </div>
           <div
             class="text-history font-[Lexend_Exa] text-center text-[#310729] max-w-[95%]"
-            style="font-size: clamp(20px, 5vw, 19px);"
+            style="font-size: clamp(18px, 3vw, 16px);"
           >
             <p class="mb-5">
               Félix, um gato sofisticado, sonhava em abrir sua própria adega e, com esforço e               persuasão, fundou a World Wines Web, um espaço elegante de vinhos raros. Seu faro               apurado e conhecimento conquistaram clientes, incluindo influenciadores e amantes do                  vinho.
@@ -379,15 +389,15 @@
 
     <footer id="footer" class="mt-12 pb-8 flex flex-col justify-center items-center bg-[#0f0510]">
       <div
-        class="logo-footer mt-16 mb-16 text-center text-white w-[200px] h-[200px] border-4 border-white rounded-full flex items-center justify-center text-[50px] font-[Lexend_Exa] transition duration-500 hover:rotate-45"
+        class="logo-footer mt-16 mb-16 text-center text-white w-[200px] h-[200px] border-4 border-white rounded-full flex items-center justify-center text-[50px] font-lexend transition duration-500 hover:rotate-45"
       >
         <p>
-          W<span class="text-[65px]">W</span>W
+          W<span class="text-[65px] text-[#56070C]">W</span>W
         </p>
       </div>
       
       <div class="address mb-12">
-        <h2 class="text-[36px] font-light font-[Ibarra_Real_Nova] text-center">
+        <h2 class="text-[36px] font-light font-ibarra text-center">
           <a
             href="https://maps.app.goo.gl/5vTvN2RrRdFYV9CB7"
             target="_blank"
